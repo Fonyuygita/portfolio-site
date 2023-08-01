@@ -3,6 +3,7 @@ import Link from "next/link"
 import  styles  from "./page.module.css"
 import { client } from "@/lib/sanity";
 import { Post } from "@/lib/types";
+import TransitionEffect from "@/components/Transition";
 
 async function getData(){
   const query=`*[_type=="post"]`;
@@ -15,6 +16,8 @@ export default async function Home() {
     return (
       
    <div className={styles.article}>
+<TransitionEffect/>
+
       <h1 className={styles.title}>Words Change  <br/>The World</h1>
       <div className={styles.line}></div>
       <p className={styles.desc}>
