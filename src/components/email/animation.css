@@ -1,0 +1,52 @@
+.circular-text-animation {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    display:flex;
+   cursor: pointer;
+    padding: 1.4rem;
+   
+
+
+  }
+  
+
+  
+
+  
+  .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  
+  .image-container {
+    position: absolute;
+   bottom: 13%;
+    left: 20%;
+
+    border: 1px solid teal;
+    border-radius: 50%;
+    padding: 12px;
+       
+  }
+  
+  .text-container{
+    position: absolute;
+    bottom: 11%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    
+    padding: 12px
+  }
+  .text-container h2{
+    color: white;
+  }
+  

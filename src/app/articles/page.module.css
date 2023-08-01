@@ -1,0 +1,150 @@
+/* about css here */
+.article{
+    margin-top:2rem;
+
+}
+
+.article h1.title{
+    font-weight:bold;
+    color:#999;
+    font-size:3.1rem;
+    text-align:center;
+    font-family:sans-serif;
+    opacity: 0.5;
+    
+    
+}
+.article p.desc{
+    color: #444;
+    font-size: 20px;
+    margin-top: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.7rem;
+}
+.container{
+
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2.6rem;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 400px;
+    color: #666;
+    gap: 2rem;
+}
+.container{
+    margin-top: 3.2rem;
+}
+
+.projectImage{
+width: 400px;
+
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.projectImage .img{
+    width: 100%;
+    height: 100%;
+}
+.projectDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+.projectDesc .title{
+    text-align: left;
+}
+.title h4{
+    font-size: 18px;
+    color: #444;
+    padding: 1rem;
+    letter-spacing: 6px;
+}
+.title h2{
+    color: #999;
+    font-size: 2rem;
+    letter-spacing: 6px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.btn .btn1{
+    color: #999;
+    padding: 11px 12px;
+    background-color: #222;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5 all ease-in-out;
+}
+.btn1:hover{
+    background-color: #444;
+    color: #111;
+}
+
+
+.icon:hover{
+    padding: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 1px dashed #888;
+}
+.line{
+    height: 0.5px;
+    width: 15%;
+    background-color: greenyellow;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width:780px){
+ 
+    
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.6rem;
+}
+
+.article{
+    margin-top:4rem;
+
+}
+
+.article h1.title{
+    
+    font-size:2.1rem;
+   
+    
+    
+}
+.article p.desc{
+    color: #444;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.7rem;
+    text-align: center;
+}
+
+
+}

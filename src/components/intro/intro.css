@@ -1,0 +1,264 @@
+.container{
+   background-color: #111;
+    display:flex;
+    justify-content:space-between;
+    padding: 3rem;
+    gap: 2.7rem;
+    border-radius: 2rem;
+    overflow-x: hidden;
+    
+}
+
+.imgContainer{
+    width: 340px;
+    height: 340px;
+    /* border: 12px solid teal; */
+    border-radius: 1rem;
+    
+}
+
+.right{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    color: gray;
+    padding: 1.4rem;
+    padding-bottom: 0;
+    border-radius: 10px;
+    transition: 0.2s all ease-in;
+
+}
+
+.right:hover{
+    border-radius:30px;
+   
+    margin-bottom: -3rem;
+}
+.right h1{
+
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+span.first{
+    color: yellowgreen;
+}
+
+
+.btn{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.3rem;
+
+}
+
+.btn1{
+    color: teal;
+    padding: 12px 17px;
+    background-color:#3333;
+    border-radius: 2rem;
+
+
+}
+
+.socials{
+    display: flex;
+    margin-top: 1.2rem;
+    gap: 1rem;
+    padding: 12px;
+}
+
+.icon{
+    border: 1px solid teal;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+/* media queries  tablets*/
+
+@media  screen and (max-width:760px){
+  
+
+    .container{
+    
+        flex-direction: column;
+        gap: 2rem;
+         
+     }
+
+     .imgContainer{
+        /* width: 270px;
+        height: 300px; */
+        border: 12px solid teal;
+        
+        border-radius: 1rem;
+        
+    }
+    .right{
+        padding-top: 2rem;
+    align-items: center;
+    color: gray;
+    padding: 1.4rem;
+    }
+
+    .img{
+width: 270px;
+height: 300px;
+    }
+
+    .right h1{
+
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    span.first{
+        color: teal;
+        border: none;
+    }
+    
+    .right p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn{
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 1.3rem;
+    
+    }
+    
+    .btn1{
+        color: teal;
+        padding: 8px 12px;
+        background-color:#36262633;
+        border-radius: 2rem;
+    
+    
+    }
+
+    .left{
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .socials{
+        display: flex;
+        margin-top: 1.2rem;
+        gap: 1rem;
+        padding: 14px;
+    }
+    
+    .icon{
+        border: 1px solid coral;
+        padding: 2px;
+        border-radius: 50%;
+    }
+    
+    
+}
+
+
+/* media queries  mobile*/
+
+@media  screen and (max-width:420px){
+  
+
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+         
+     }
+
+     .imgContainer{
+        width: 300px;
+        height: 330px;
+     border: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;   
+        border-radius: 1rem;
+        margin-right: 3rem;
+        
+    }
+    .right{
+        padding-top: 2rem;
+    align-items: center;
+    color: gray;
+    padding: 2.4rem;
+    margin-top: 2rem;
+
+    }
+.left{
+    margin: 0 auto;
+}
+    .img{
+width: 290px;
+height: 300px;
+margin: 0 auto;
+border-radius: 4rem;
+    }
+    
+
+    .right h1{
+
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    span.first{
+        color: teal;
+        border: none;
+    }
+    
+    .right p{
+        width: 100%;
+        
+        font-size: 15px;
+    }
+
+    .btn{
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 1.3rem;
+    
+    }
+    
+    .btn1{
+        color: teal;
+        padding: 5px 9px;
+        background-color:#36262633;
+        border-radius: 2rem;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    
+    }
+
+    .socials{
+        display: flex;
+        margin-top: 1.2rem;
+        gap: 1rem;
+        padding: 14px;
+    }
+    
+    .icon{
+        border: 1px solid coral;
+        padding: 2px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+}

@@ -1,0 +1,60 @@
+.connect{
+    background-color: #111;
+    display:flex;
+   flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+text-align: center;
+    
+}
+.connect h1{
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.connect span{
+    color: teal;
+}
+p{
+    color: gray;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+@media  screen and (max-width:760px){
+ .connect h1{
+    font-size: 1.3rem;
+ }   
+
+ .connect span{
+    border: none;
+ }
+ p{
+    width: 100%;
+ }
+}
+
+@media  screen and (max-width:480px){
+
+   .connect{
+     margin-top: -3rem;
+     margin-bottom: 2rem;
+      
+  }
+    .connect h1{
+       font-size: 1.4rem;
+    }   
+   
+    .connect span{
+       border: none;
+    }
+    p{
+       width: 100%;
+       font-size: 15px;
+    }
+   }

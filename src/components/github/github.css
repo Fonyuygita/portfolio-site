@@ -1,0 +1,97 @@
+/* dealing with th github styles */
+
+.githubContainer{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    margin-bottom: 3rem;
+        
+}
+
+.githubTitle{
+    font-size: 30px;
+    color: #777;
+    font-size: 3rem;
+}
+
+.githubContainer .img{
+    width: 400px;
+    height: 340px;
+    transition: 0.4s all ease-out;
+}
+
+
+
+
+
+.dates{
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.githubChart{
+    width: 820px;
+    /* background-color: teal; */
+    text-align: center;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+.githubBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    color: #999;
+    padding: 11px 12px;
+    background-color: #222;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5 all ease-in-out;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+}
+.githubBtn:hover{
+    background-color: #444;
+    color: #111;
+}
+.line{
+    height: 0.5px;
+    width: 20%;
+    background-color: greenyellow;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:780px){
+
+    .githubContainer{
+        box-shadow: none;
+        padding: 3rem;
+    }
+    .githubTitle{
+        font-size: 2rem;
+    }
+}
