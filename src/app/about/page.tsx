@@ -70,7 +70,7 @@ const About = () => {
 
 
       <div className={styles.bottom}>
-<h3>My Skills & Aspiration</h3>
+<h3>My Skills And Aspiration</h3>
 <div className={styles.line}></div>
 <div className={styles.pSection}>
 
