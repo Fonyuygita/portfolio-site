@@ -37,7 +37,7 @@ const page = (props: Props) => {
             <div className={styles.container}>
                 <form action="" className={styles.form}>
                     <input type="text" placeholder='first name' required />
-                    <input type="text" placeholder='second name' required />
+                    <input type="text" placeholder='last name' required />
                     <textarea name="" id="" cols={30} rows={6} placeholder='message' required />
                     <button className={styles.btn} type='submit'>Send Message</button>
                 </form>
