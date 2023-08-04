@@ -123,3 +123,14 @@
  }
 
 }
+
+@media screen and (max-width:300px){
+    .form{
+        padding: 5rem;
+        margin: 0 auto;
+    }
+    .form input{
+        width: 60%;
+    }
+
+}
