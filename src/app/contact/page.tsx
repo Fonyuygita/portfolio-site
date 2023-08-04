@@ -38,8 +38,8 @@ const page = (props: Props) => {
                 <form action="" className={styles.form}>
                     <input type="text" placeholder='first name' required />
                     <input type="text" placeholder='last name' required />
-                    <textarea name="" id="" cols={30} rows={6} placeholder='message' required />
-                    <button className={styles.btn} type='submit'>Send Message</button>
+                    <textarea name="" id="" cols={30} rows={6} placeholder='message' required  className={styles.area}/>
+                    <button className={styles.btn} type='submit'>Send</button>
                 </form>
                 {err && <p className='error'>message was not send</p>}
             </div>

@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    align-items: center;
+    
     color: gray;
     padding: 1.4rem;
     padding-bottom: 0;
@@ -44,6 +44,7 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 span.first{
     color: yellowgreen;
@@ -103,7 +104,9 @@ span.first{
         padding-top: 2rem;
     align-items: center;
     color: gray;
-    padding: 1.4rem;
+    /* padding: 2.4rem;
+    box-shadow: none; */
+    width: 100%;
     }
 
     .img{
@@ -116,7 +119,7 @@ height: 300px;
         font-size: 1.6rem;
         margin-bottom: 1rem;
         font-weight: bold;
-        text-align: center;
+     
     }
     span.first{
         color: teal;
@@ -189,11 +192,13 @@ height: 300px;
         
     }
     .right{
-        padding-top: 2rem;
+        padding-top: 3rem;
     align-items: center;
     color: gray;
-    padding: 2.4rem;
+    /* padding: 2.4rem; */
     margin-top: 2rem;
+    width: 100%;
+
 
     }
 .left{
