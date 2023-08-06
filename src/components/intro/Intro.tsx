@@ -8,13 +8,14 @@ import github from "../../../public/5.png"
 
 
 import   "./intro.css"
+import Link from 'next/link'
 
 const Intro = () => {
   return (
     <div className='container'>
       <div className="left">
 <div className="imgContainer">
-    <Image src="/image.jpg" width={300} height={270}  alt='intro' className='img'/>
+    <Image src="/my.png" width={300} height={270}  alt='intro' className='img'/>
 </div>
 
       </div>
@@ -23,8 +24,8 @@ const Intro = () => {
 
 <p>I am a Full Stack Developer . I have worked with various technologies and frameworks, such as React(NextJs), , Node.js, Firebase, and Flutter. I am passionate about creating user-friendly, scalable, and secure solutions that meet the needs of my clients. I am always eager to learn new skills and explore new challenges.</p>
 <div className="btn">
-<a className='btn1'>Github</a>
-<a className='btn1'>Resume</a>
+<Link href="" className='btn1'>Github</Link>
+<Link href="#" className='btn1'>Resume</Link>
 </div>
 <div className="socials">
 <Image src={whatsapp} width={40} height={40} color='gray' className='icon' alt='intro'/>
