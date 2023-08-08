@@ -32,8 +32,13 @@ const Skills = () => {
         <Skill name='Typescript' x="8vw" y="-20vw"/>
         <Skill name='Firebase' x="-25vw" y="18vw"/>
         <Skill name='Git/Github' x="18vw" y="18vw"/>
-
-
+         
+         
+        <Skill name='Prisma' x="5vw" y="26vw"/>
+        <Skill name='Postgre sql' x="0vw" y="-32vw"/>
+        <Skill name='Redux' x="0vw" y="19vw"/>
+        <Skill name='React Native' x="-15vw" y="12vw"/>
+        
 
 
 

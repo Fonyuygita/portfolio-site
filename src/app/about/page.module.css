@@ -3,9 +3,8 @@
 }
 
 .left{
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px #555;
+    
         padding: 3rem; 
        
         border-left: 12px solid yellowgreen;
@@ -103,9 +102,8 @@ margin-top: 2rem;
     text-align: center;
 }
 .image{
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px #555;
+    
         padding: 2rem;
         flex:2;
         display: flex;
@@ -234,9 +232,7 @@ margin-top: 2rem;
     align-items: center;
     padding: 1.6rem;
     gap: 1.4rem;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px #555
   }
   .pBox h4{
     margin-top: 1rem;
