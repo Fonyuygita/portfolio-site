@@ -29,7 +29,7 @@ const Project = () => {
 <div className={styles.projectDesc}>
 <div className={styles.title}>
   <h4>Featured Project</h4>
-  <h2>CollectChop</h2>
+  <h2>Collect_Chop</h2>
 </div>
 
 <div className={styles.desc}>

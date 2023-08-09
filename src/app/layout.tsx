@@ -7,6 +7,7 @@ import CircularTextAnimation from '@/components/email/Animation'
 import Navbar from '@/components/Navbar/Navbar'
 import Transition from '@/components/Transition'
 import TransitionEffect from '@/components/Transition'
+import Footer from './Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,6 +36,7 @@ export default function RootLayout({
      
         
       </body>
+      <Footer/>
     </html>
   )
 }
