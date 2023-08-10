@@ -9,18 +9,19 @@ import github from "../../../public/5.png"
 
 import   "./intro.css"
 import Link from 'next/link'
+import AnimateText from '../AnimateText'
 
 const Intro = () => {
   return (
     <div className='container'>
       <div className="left">
 <div className="imgContainer">
-    <Image src="/my.png" width={300} height={270}  alt='intro' className='img'/>
+    <Image src="/fonyuy.png" width={300} height={270}  alt='intro' className='img'/>
 </div>
-
       </div>
-      <div className="right">
-        <h1><span className='first !text-green-300 !font-bold-200'>My Name Is</span> Fonyuy Gita</h1>
+      <div className="right w-full">
+        
+        <AnimateText text={`I'm Fonyuy Jude.I Turn Vision Into Reality With Code And Design`} className='!text-6xl !text-left sm:!text-2xl'/>
 
 <p>I am a Full Stack Developer . I have worked with various technologies and frameworks, such as React(NextJs), , Node.js, Firebase, and Flutter. I am passionate about creating user-friendly, scalable, and secure solutions that meet the needs of my clients. I am always eager to learn new skills and explore new challenges.</p>
 <div className="btn">

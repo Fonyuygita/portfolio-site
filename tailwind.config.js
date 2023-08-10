@@ -16,6 +16,9 @@ module.exports = {
       colors:{
         dark:"#1b1b1b"
       },
+      animation:{
+   'spin-slow':'spin 8s linear infinite'
+      },
       backgroundImage:{
         circular:'repeating-radial-gradient(teal 2px, #2222 5px, #2222 100px);'
       }

@@ -3,7 +3,7 @@
     display:flex;
     justify-content:space-between;
     padding: 3rem;
-    gap: 2.7rem;
+    gap: 3.7rem;
     border-radius: 2rem;
 
     
@@ -14,15 +14,18 @@
 }
 .imgContainer{
     width: 340px;
-    height: 340px;
-    /* border: 12px solid teal; */
-    border-radius: 50%;
-    box-shadow: 4px 4px 4px #777;
+    height: 410px;
+    border: 1px solid yellow;
+  
     padding: 2rem;
+    background-color: #111;
 
     
 }
 
+.img{
+    object-fit: contain;
+}
 .right{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -51,10 +54,25 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    text-align: center;
+ text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.right p{
+    font-size: 1rem;
+    width: 100%;
+   text-align: left;
 }
 span.first{
 
+}
+.intro-header{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: tight;
+    color: red;
 }
 
 
@@ -62,6 +80,9 @@ span.first{
     margin-top: 2.5rem;
     display: flex;
     gap: 1.3rem;
+    
+    align-items: flex-start;
+    justify-content: flex-start;
 
 }
 
@@ -97,6 +118,7 @@ span.first{
         flex-direction: column;
         gap: 2rem;
         width: 100%;
+        margin: 0 auto;
          
      }
 
@@ -104,12 +126,17 @@ span.first{
         /* width: 270px;
         height: 300px; */
     
-         
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        margin: 6px;
+        padding: 20px;
+
+    border: 1px solid yellow;
+            background-color: #222;
+            /* transform: translateX(-50%); */
+           
         
-            /* border: 12px solid teal; */
-            border-radius: 50%;
-            box-shadow: 4x 4px 4px #777;
-            padding: 2rem;
     
         
     }
@@ -124,8 +151,11 @@ span.first{
     }
 
     .img{
+        display: flex;
 width: 270px;
 height: 300px;
+align-self: center;
+padding-top: 12px;
     }
 
     .right h1{
@@ -195,6 +225,7 @@ height: 300px;
         width: 100%;
         justify-content: center;
         align-items: center;
+        overflow-x: hidden;
       
          
      }
@@ -203,18 +234,20 @@ height: 300px;
         width: 300px;
         height: 300px;
        display: flex;
-     transform: translateX(-10%);
+     transform: translateX(-5%);
+    background-color: #111;
         
             /* border: 12px solid teal; */
-            border-radius: 50%;
-            box-shadow: 4x 4px 4px #777;
+            border-radius: 10px;
+        
             padding: 2rem;
             margin: 0 auto;
+            overflow: hidden;
         
         
     }
     .right{
-        padding-top: 3rem;
+        padding-top: 1rem;
     align-items: center;
     color: gray;
     /* padding: 2.4rem; */
@@ -223,6 +256,7 @@ height: 300px;
     text-align: center;
     justify-content: center;
     box-shadow: 5px 5px 5px 5px  #444;
+    background-color: #2222;
 
 
     }

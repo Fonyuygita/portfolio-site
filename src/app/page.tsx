@@ -1,3 +1,4 @@
+import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/Transition'
 import Connect from '@/components/connect/Connect'
 import Email from '@/components/email/Email'
@@ -15,7 +16,7 @@ export default function Home() {
       <Connect/>
       <Mouse/>
     
-      <Email/>
+     
     </div>
   )
 }
