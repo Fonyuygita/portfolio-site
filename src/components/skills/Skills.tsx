@@ -34,14 +34,20 @@ const Skills = () => {
         <Skill name='Git/Github' x="18vw" y="18vw"/>
          
          
-        <Skill name='Prisma' x="5vw" y="26vw"/>
-        <Skill name='Postgre sql' x="0vw" y="-32vw"/>
+        <Skill name='Prisma' x="-12vw" y="5vw"/>
+        <Skill name='Postgre sql' x="0vw" y="-16vw"/>
         <Skill name='Redux' x="0vw" y="19vw"/>
         <Skill name='React Native' x="-15vw" y="12vw"/>
+        {/* <Skill name='Drizzle' x="10vw" y="17vw"/>
+        <Skill name='Mysql' x="3vw" y="-12vw"/>
+        <Skill name='Web Automation' x="0vw" y="19vw"/>
+        <Skill name='WordPress' x="3vw" y="4vw"/>
+        
+
         
 
 
-
+ */}
 
 
     </div>

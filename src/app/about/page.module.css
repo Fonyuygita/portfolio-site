@@ -1,5 +1,6 @@
 .about{
     margin-top: 1rem;
+    overflow-x: hidden;
 }
 
 .left{
@@ -7,7 +8,7 @@
     
         padding: 3rem; 
        
-        border-left: 12px solid yellowgreen;
+
 }
 
 .about .section{
@@ -30,27 +31,21 @@
     color: #999;
    
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bolder;
 }
 .about  span{
-    color: #555;
+    color: yellow;
     font-weight: bolder;
     opacity: 0.5;
 }
-.line{
-width: 20%;
-height:4px;
-background: greenyellow;
-margin: 0 auto;
-}
+
 .bottom{
     /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
         padding: 3rem; 
-       
-        border-left: 12px solid teal;
+     
     
 }
 
@@ -110,7 +105,7 @@ margin-top: 2rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-bottom: 2px solid yellowgreen;
+        border-bottom: 2px solid yellow;
        
     
 }
@@ -159,7 +154,7 @@ margin-top: 2rem;
     height: 40px;
     padding: 7px;
     border-radius: 50%;
-    border: 0.1px solid teal;
+    border: 0.1px solid yellow
 }
 
 
@@ -167,7 +162,7 @@ margin-top: 2rem;
 .image .box{
     width: 370px;
     height: 400px;
-    border: 1px solid teal;
+    
     margin-bottom: 1rem;
     border-radius:2rem;
 }
@@ -191,90 +186,8 @@ margin-top: 2rem;
 }
 
 
+ 
 
-.pSection{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-}
-  
-  .progress {
-    height: 10px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-   background: #fff;
-    border-radius: 5px;
-    width: 70%;
-    transition: width 0.5s ease-in-out;
-  }
-  .level{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .level span{
-   
-  }
-  .progress .fill{
-    background:yellowgreen;
-    opacity: 0.8;
-    width: 50%;
-    height: 10px;
-    border-radius: 0 50% 50% 0;
-  }
-  .pBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.6rem;
-    gap: 1.4rem;
-    box-shadow: 5px 5px 5px #555
-  }
-  .pBox h4{
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bolder;
-    align-self: center;
-    border: 1px solid teal;
-    border-radius: 50%;
-    padding: 14px;
-    transform: translate(-50% -50% );
-  }
-  .pBox span{
-    color: yellowgreen;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  
-.pBox p{
- color: #666;
-  }
-
-   .imgs{
-  
-    border: 1px solid #444;
-    border-radius: 50%;
-  }
- .bottom .line{
-    height: 0.6px;
-    width:10%;
-   background: teal;
-  }
-
-  .left .line{
-    height: 0.6px;
-    width: 5%;
-    background: #777;
-    margin: 0;
-    
-  }
 
   
   
@@ -286,7 +199,7 @@ margin-top: 2rem;
       }   
     .aboveSection{
         display: flex;
-        
+        box-shadow: none;
         gap: 2rem;
         align-items: center;
         justify-content: center;
@@ -319,11 +232,20 @@ margin-top: 2rem;
     height: 270px;
 }
 
+.left{
+    box-shadow: none;
+    
+        padding: 2rem; 
+       
+
+}
+
+
 
 .image .box{
     width: 250px;
     height: 300px;
-    border: 12px solid teal;
+    border: 12px solid rgb(167, 70, 59);
     margin-bottom: 1rem;
     border-radius:2rem;
     display: flex;

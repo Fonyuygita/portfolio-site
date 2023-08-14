@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: repeating-radial-gradient(teal 2px, #2222 5px, #2222 100px);
+    background: repeating-radial-gradient(rgb(243, 132, 5) 2px, #2222 5px, #2222 100px);
 
 }
 
@@ -48,7 +48,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: repeating-radial-gradient(#fff 5px, #2222 1px, #2222 100px);
+        background: repeating-radial-gradient(#fff 3px, #2222 1px, #2222 100px);
     
     }
     .line{

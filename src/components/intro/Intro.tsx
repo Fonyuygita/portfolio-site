@@ -1,3 +1,5 @@
+"use client"
+import {motion} from "framer-motion"
 import Image from 'next/image'
 import React from 'react'
 import Text from './Text'
@@ -19,7 +21,7 @@ const Intro = () => {
     <Image src="/fonyuy.png" width={300} height={270}  alt='intro' className='img'/>
 </div>
       </div>
-      <div className="right w-full">
+      <motion.div className="right w-full"  initial={{y:10}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
         
         <AnimateText text={`I'm Fonyuy Jude.I Turn Vision Into Reality With Code And Design`} className='!text-6xl !text-left sm:!text-2xl'/>
 
@@ -39,7 +41,7 @@ const Intro = () => {
 
 
 
-      </div>
+      </motion.div>
     </div>
   )
 }

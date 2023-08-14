@@ -8,6 +8,7 @@ import about from "../../../public/aboutMe.png"
 import Link from 'next/link'
 import Skills from '@/components/skills/Skills'
 import TransitionEffect from '@/components/Transition'
+import Education from '@/components/Education'
 
 
 
@@ -70,42 +71,7 @@ const About = () => {
 
 
         <div className={styles.bottom}>
-          <h3>My Skills & Aspirations</h3>
-          <div className={styles.line}></div>
-          <div className={styles.pSection}>
-
-
-
-            <div className={styles.pBox}>
-              <div className="imgs">
-                <Image src={icon3} alt='skill' width={40} height={40} />
-              </div>
-              <div className="boxDesc">
-                <div className={styles.progress}>
-                  <div className={styles.fill}></div>
-                </div>
-
-                <div className="desc">
-                  <h5 className='lan'>Js</h5>
-                  <p className='desc'>As a developer, I am passionate about creating innovative and impactful solutions for real-world problems. I have a strong background in web development, data science, and machine learning, and I enjoy learning new technologies and frameworks. I have worked on various projects, such as building a chatbot, a recommender system, and a sentiment analysis tool, using Python, JavaScript, HTML, CSS, Flask, Nodejs, TensorFlow, and Scikit-learn. I am always eager to challenge myself and improve my skills and knowledge.</p>
-                </div>
-              </div>
-
-              <div className="level">
-                <h4>30+</h4>
-                <span className='pName'>Projects</span>
-              </div>
-            </div>
-
-
-
-
-
-
-          </div>
-
-
-
+          <Education/>
         </div>
 
       </div>

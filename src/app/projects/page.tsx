@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
 
+import React from 'react'
+import {motion} from "framer-motion"
 import styles from "./page.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,14 +17,15 @@ const Project = () => {
 
       <h1 className={styles.title}>Imagination Trumps <br/> Knowledge</h1>
       <div className={styles.line}></div>
-      <p className={styles.desc}>
+      <motion.p className={styles.desc} initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti corporis accusantium rem eveniet eligendi, ve
-      </p>
+      </motion.p>
       <div className="line"></div>
       <div className={styles.container}>
         <div className={styles.projects}>
 
 <Link href="#" className={styles.project}>
+  <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 <div className={styles.projectImage}>
   <Image src="https://images.pexels.com/photos/1833336/pexels-photo-1833336.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="project" width={350} height={380} className='img' />
 </div>
@@ -33,9 +36,9 @@ const Project = () => {
 </div>
 
 <div className={styles.desc}>
-  <p>
+  <motion.p>
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maxime fuga reiciendis est nemo consequuntur temporibus sunt voluptates adipisci assumenda laboriosam, delectus cum!
-  </p>
+  </motion.p>
 </div>
 
 <div className={styles.btn}>
@@ -49,11 +52,13 @@ const Project = () => {
 <div className={styles.count}>
   <span className={styles.number}>1</span>
 </div>
-
+</motion.div>
 </Link>
 
 
 <Link href="#" className={styles.project}>
+<motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
+
 <div className={styles.projectImage}>
   <Image src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=600" alt="project" width={350} height={380} className='img' />
 </div>
@@ -64,9 +69,9 @@ const Project = () => {
 </div>
 
 <div className={styles.desc}>
-  <p>
+  <motion.p initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maxime fuga reiciendis est nemo consequuntur temporibus sunt voluptates adipisci assumenda laboriosam, delectus cum!
-  </p>
+  </motion.p>
 </div>
 
 <div className={styles.btn}>
@@ -82,12 +87,14 @@ const Project = () => {
   <span className={styles.number}>2</span>
 </div>
 
-
+</motion.div>
 </Link>
 
 
 
 <Link href="#" className={styles.project}>
+<motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
+
 <div className={styles.projectImage}>
   <Image src="https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="project" width={350} height={380} className='img' />
 </div>
@@ -116,6 +123,7 @@ const Project = () => {
 <div className={styles.count}>
   <span className={styles.number}>3</span>
 </div>
+</motion.div>
 
 </Link>
 
