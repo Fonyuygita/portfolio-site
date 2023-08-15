@@ -1,10 +1,29 @@
 /* about css here */
-.article{
+.about{
     margin-top:2rem;
+    overflow-x: hidden;
 
 }
 
-.article h1.title{
+.count{
+    position: absolute;
+    color: #111;
+    background: yellowgreen;
+    padding: 1rem;
+    top: 1%;
+    left: 1%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    font-size: 2.7rem;
+}
+
+.about h1.title{
     font-weight:bold;
     color:#999;
     font-size:3.1rem;
@@ -14,43 +33,50 @@
     
     
 }
-.article p.desc{
+.about p.desc{
     color: #444;
     font-size: 20px;
     margin-top: 1.2rem;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.7rem;
-}
-.container{
-
+    text-align: center;
 }
 
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 2.6rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .project{
     display: flex;
     flex-direction: column;
     padding: 12px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    width: 400px;
+    box-shadow: 5px 5px 5px  #555;
+
+    align-items: center;
+    justify-content: center;
     color: #666;
-    gap: 2rem;
+    gap: 1rem;
+    position: relative;
+    transition: 0.6 all ease-in-out;
+
+}
+
+.project:hover{
+    background-color: #333;
 }
 .container{
     margin-top: 3.2rem;
 }
 
 .projectImage{
-width: 400px;
 
-border-radius: 12px;
+
 display: flex;
 align-items: center;
 justify-content: center;
@@ -58,6 +84,7 @@ justify-content: center;
 .projectImage .img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 .projectDesc{
     display: flex;
@@ -65,9 +92,7 @@ justify-content: center;
     gap: 1.2rem;
     align-items: center;
 }
-.projectDesc .title{
-    text-align: left;
-}
+
 .title h4{
     font-size: 18px;
     color: #444;
@@ -99,7 +124,13 @@ justify-content: center;
     background-color: #444;
     color: #111;
 }
-
+.icon{
+    padding: 10px;
+    background-color: #444;
+    border-radius: 50%;
+    border: 1px dashed #888;
+    transition: 0.4 all ease-in-out;
+}
 
 .icon:hover{
     padding: 10px;
@@ -115,35 +146,100 @@ justify-content: center;
 
 }
 
+
+/* mobile responsiveness */
+
 @media screen and (max-width:780px){
- 
+
     
 .projects{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.6rem;
+
+    grid-template-columns: 1fr ;
+   gap: 3rem;
+   padding: 4rem;
+   margin: 0 auto;
+  
 }
 
-.article{
-    margin-top:4rem;
-
-}
-
-.article h1.title{
-    
+.about h1.title{
+    font-weight:bold;
+    color:hsl(0, 0%, 60%);
     font-size:2.1rem;
-   
+    text-align:center;
+    font-family:sans-serif;
+    opacity: 0.5;
+    margin-top: 6rem;
     
     
 }
-.article p.desc{
+ .desc p{
     color: #444;
-    font-size: 20px;
-    margin-top: 15px;
-    width: 70%;
+    font-size: 14px;
+    margin-top: 1.2rem;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1.7rem;
     text-align: center;
+}
+.c
+
+
+.projectDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.project{
+  width: 300px;
+}
+
+.title h4{
+    font-size: 15px;
+    color: #444;
+    padding: 1rem;
+    letter-spacing: 6px;
+}
+.title h2{
+    color: #999;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.btn .btn1{
+    color: #999;
+    padding: 8px 9px;
+    background-color: #222;
+    font-size: 12px;
+}
+
+.icon{
+    padding: 5px;
+    background-color: #444;
+    border-radius: 50%;
+    border: 1px dashed #888;
+    transition: 0.4 all ease-in-out;
+}
+
+.count{
+    position: absolute;
+    color: #111;
+    background: yellowgreen;
+    padding: 1rem;
+    top: 0%;
+    left: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    font-size: 1.7rem;
 }
 
 

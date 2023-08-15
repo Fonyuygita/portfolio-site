@@ -90,7 +90,7 @@ const Navbar = () => {
     <header className=' w-full  py-8 font-medium  bg-dark-500 flex items-center justify-between border-b border-green-90 relative lg:py-10 lg:flex lg:justify-between md:gap-13'>
 
 
-      <button  className="flex flex-col justify-center items-center !bg-none hidden lg:flex" onClick={handleClick}>
+      <button  className="flex flex-col justify-center items-center !bg-none hidden lg:flex pl-2" onClick={handleClick}>
         <span className={`bg-white block  transition-all duration-300  h-0.5 w-6 rounded-sm   ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
         <span className={`bg-white block transition-all duration-300  h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
         <span className={`bg-white block  transition-all duration-300 h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -109,7 +109,7 @@ const Navbar = () => {
    <MyLink href='/about' title='About' className='mb-4'/>
    <MyLink href='/projects' title='Projects' className='mb-4'/>
    <MyLink href='/articles' title='Articles' className='mb-4'/>
-   <MyLink href='/contact' title='Contact' className='mb-4'/>
+
       </nav>
       </button>
       
@@ -142,7 +142,7 @@ const Navbar = () => {
    <MyLink href='/about' title='About' className='mx-4'/>
    <MyLink href='/projects' title='Projects' className='mx-4'/>
    <MyLink href='/articles' title='Articles' className='ml-4'/>
-   <MyLink href='/contact' title='Contact' className='ml-4'/>
+
 
       </nav>
 

@@ -31,10 +31,14 @@ const Intro = () => {
 <Link href="#" className='btn1'>Resume</Link>
 </div>
 <div className="socials">
-<Image src={whatsapp} width={40} height={40} color='gray' className='icon' alt='intro'/>
-<Image src={github} width={40} height={40} color='gray'  className='icon' alt='intro'/>
-<Image src={whatsapp} width={40} height={40} className='icon'  alt='intro'/>
+  <Link href="https://hashnode.com/">
+<Image src={whatsapp} width={50} height={50} color='gray' className='icon' alt='intro'/>
+</Link>
 
+<Link href="https://github.com/">
+<Image src="/3.png" width={50} height={50} 
+className='icon'  alt='intro'/>
+</Link>
 
 
 </div>

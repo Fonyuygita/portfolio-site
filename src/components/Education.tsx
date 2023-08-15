@@ -42,19 +42,24 @@ const Education = () => {
                 <motion.div style={{scaleY:scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-yellow-500 origin-top "/>
 
              <ul className='w-full flex flex-col items-start justify-between xs:ml-9 md:ml-5'>
-             <Details title={`BSC IN Computer Science`} header='The future of nation bbuilding' inspiration="I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time  I have so many"/>
+             <Details title={`Bsc IN Computer Science`} header='The future of nation building' inspiration="Pursuing a BSc in computer science is a rewarding and challenging endeavor. Computer science is a field that encompasses many disciplines, such as programming, software engineering, artificial intelligence, data science, cybersecurity, and more. Computer science is also a field that is constantly evolving and innovating, creating new opportunities and solutions for various problems"/>
 
-             <Details title={`BSC IN Computer Science`} header='The future of nation bbuilding' inspiration="I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time  I have so many"/>
-
-
-             <Details title={`BSC IN Computer Science`} header='The future of nation bbuilding' inspiration="I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time  I have so many"/>
-
-
-             <Details title={`BSC IN Computer Science`} header='The future of nation bbuilding' inspiration="I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time  I have so many"/>
+             <Details title={`Bsc in Mathematics`} header='The language of patterns.
+' inspiration="My goal is to become a well-rounded and versatile mathematician and computer scientist who can contribute to the advancement of science and society. I believe that by studying these subjects, I will not only gain a deeper understanding of the world, but also a greater appreciation of its beauty and diversity.
+"/>
 
 
-             <Details title={`BSC IN Computer Science`} header='The future of nation bbuilding' inspiration="I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time  I have so many"/>
+             <Details title={`Backend Developer`} header='Managing data, logic, and functionality.
+' inspiration="Backend development is the backbone of any software application. It handles the logic, data, and functionality that power the user interface. Backend developers are responsible for creating, maintaining, and optimizing the server-side code that runs behind the scenes. They use various tools and languages, such as Python, Java, Ruby, PHP, Node.js, SQL, and more, to build scalable, secure, and efficient web services and APIs. Backend development is a challenging and rewarding career that requires creativity, problem-solving skills, and attention to detail. If you are passionate about building software that makes a difference in the world, backend development might be the perfect fit for you.
+"/>
 
+
+             <Details title={`Frontend Developer`} header='Designing web/app user interfaces
+' inspiration="Frontend development is the art and science of creating engaging and interactive user interfaces for web applications. It is a challenging and rewarding field that requires creativity, problem-solving skills, and attention to detail. Frontend developers use a variety of tools and technologies to bring their designs to life, such as HTML, CSS, JavaScript, frameworks, libraries, and APIs. Frontend development is constantly evolving and adapting to the needs and expectations of users and clients. It is a great opportunity to learn new skills, explore new possibilities, and make a positive impact on the web.
+"/>
+
+
+            
              </ul>
 
             </div>

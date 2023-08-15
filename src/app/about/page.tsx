@@ -52,7 +52,7 @@ const About = () => {
 
                 </Link>
                 <Link href="#" className={styles.icon}>
-                  <Image src={icon2} width={26} height={26} alt='icon' />
+                  <Image src="/3.png" width={26} height={26} alt='icon' />
 
                 </Link>
 
