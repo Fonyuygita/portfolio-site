@@ -1,9 +1,11 @@
 import { motion, useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 
+type ReferenceType={
+    reference:React.RefObject<HTMLElement>;
+}
 
-
-const Circular = ({reference}:any) => {
+const Circular = ({reference}:ReferenceType) => {
    
     const {scrollYProgress}=useScroll({
         target:reference,

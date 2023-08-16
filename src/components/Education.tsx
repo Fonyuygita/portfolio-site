@@ -11,7 +11,7 @@ inspiration:string;
 }
 
 const Details=({title, header, inspiration}:DetailsProps)=>{
-    const ref=useRef();
+    const ref=useRef<HTMLLIElement | null>(null);
 
     return(
   <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between gap-2 md:w-[80%] sm:w-[85%]'>
@@ -26,7 +26,7 @@ const Details=({title, header, inspiration}:DetailsProps)=>{
 }
 
 const Education = () => {
-    const ref=useRef(null)
+    const ref=useRef<HTMLDivElement| null>(null);
     const {scrollYProgress}=useScroll(
         {
        target:ref,
