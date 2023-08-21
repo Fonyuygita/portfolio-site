@@ -41,7 +41,7 @@ const About = () => {
           </div>
           <div className={styles.image}>
             <div className={styles.box}>
-              <Image src={about} alt="image" width={380} height={400} className={styles.img} />
+              <Image src="/image.png" alt="image" width={380} height={400} className={styles.img} />
 
             </div>
             <div className={styles.desc}>
