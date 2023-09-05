@@ -31,10 +31,10 @@ const About = () => {
               </div>
 
 
-              <p>Hi, I'm a developer and this is my story. I started coding when I was 19 years old, after I was intrigue by how someone could navigate from one page to another while using software applications, thought this was magic, and decided to give it a go.
+              <p className='sm-!text-[15px]'>{`Hi, I'm a developer and this is my story. I started coding when I was 19 years old, after I was intrigue by how someone could navigate from one page to another while using software applications, thought this was magic, and decided to give it a go.
                 <br />I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time developer. I have so many goals and dreams that I want to achieve. I want to work on projects that have a positive impact on the world, collaborate with other passionate developers, and keep learning new technologies and frameworks.
                 .
-                ```.</p>
+                `}</p>
               {/* <a href="" className={styles.btn}>Read More</a> */}
             </div>
 

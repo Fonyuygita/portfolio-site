@@ -285,7 +285,7 @@ border-radius: 4rem;
     .right p{
         width: 100%;
         
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .btn{
@@ -304,8 +304,14 @@ border-radius: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 1s all ease-in-out;
     
     
+    }
+    .ntn1:hover{
+        color:#555;
+        background: #222;
+        padding: 7px 13px;
     }
 
     .socials{

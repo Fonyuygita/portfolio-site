@@ -19,7 +19,7 @@ const Details=({title, header, inspiration}:DetailsProps)=>{
     <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"tween"}}>
         <h4 className='text-2xl font-bold capitalizee text-left text-gray-200 sm:text-xl spacing-3'>{title}</h4>
         <span className='text-lg !text-gray-400 !opacity-1 sm:text-[14px]'>{header}</span>
-        <p className='font-medium w-full text-[#444] text-[#555] '>{inspiration}</p>
+        <p className='font-medium  text-[#555]  sm:text-[15px]'>{inspiration}</p>
     </motion.div>
   </li>
     )
@@ -34,7 +34,7 @@ const Education = () => {
         }
     )
     return (
-        <div className='my-12  relative'>
+        <div className='my-12  relative sm:-mt-5'>
             <h2 className='font-bold text-8xl mb-32 sm:!text-4xl sm:!text-center xs:!text-3xl'>{"Education & Dreams"}</h2>
             <div className='w-[30%] h-[2px] bg-yellow-500 absolute top-[8%] left-[30%] md:hidden'></div>
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[100%] md:w-full">
