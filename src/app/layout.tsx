@@ -8,6 +8,7 @@ import Navbar from '@/components/Navbar/Navbar'
 
 import Footer from '../components/Footer'
 import HireMe from '@/components/HireMe'
+import Whatsapp from '@/components/Whatssapp'
 
 
 
@@ -36,7 +37,8 @@ export default function RootLayout({
       {children}
     <HireMe/>
      
-    <Footer/> 
+    <Footer/>
+    <Whatsapp/>
       </body>
      
     </html>

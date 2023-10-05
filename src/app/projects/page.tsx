@@ -18,13 +18,13 @@ const Project = () => {
       <h1 className={styles.title}>Imagination Trumps <br/> Knowledge</h1>
       <div className={styles.line}></div>
       <motion.p className={styles.desc} initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti corporis accusantium rem eveniet eligendi, ve
+      {"Exploring the Uncharted: Imagination's Guiding Light in Tech Ventures"}
       </motion.p>
       <div className="line"></div>
       <div className={styles.container}>
-        <div className={styles.projects}>
+        <div className={`${styles.projects}  ` }>
 
-<Link href="#" className={styles.project}>
+<Link href="#" className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]`}>
   <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 <div className={styles.projectImage}>
   <Image src="https://images.pexels.com/photos/1833336/pexels-photo-1833336.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="project" width={350} height={380} className='img' />
@@ -32,12 +32,13 @@ const Project = () => {
 <div className={styles.projectDesc}>
 <div className={styles.title}>
   <h4>Featured Project</h4>
-  <h2>Collect_Chop</h2>
+  <h2>Buy_Now</h2>
 </div>
 
 <div className={styles.desc}>
   <motion.p>
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maxime fuga reiciendis est nemo consequuntur temporibus sunt voluptates adipisci assumenda laboriosam, delectus cum!
+  Seamless Buying Experience: Browse through a wide range of products across diverse categories, including fashion, electronics, home goods, and more. 
+
   </motion.p>
 </div>
 
@@ -56,7 +57,7 @@ const Project = () => {
 </Link>
 
 
-<Link href="#" className={styles.project}>
+<Link href="#" className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]` }>
 <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 
 <div className={styles.projectImage}>
@@ -70,7 +71,7 @@ const Project = () => {
 
 <div className={styles.desc}>
   <motion.p initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maxime fuga reiciendis est nemo consequuntur temporibus sunt voluptates adipisci assumenda laboriosam, delectus cum!
+  Smart Search Functionality: Our advanced search feature enables you to narrow down your options based on specific criteria such as make, model year, price range, fuel efficiency, and more. 
   </motion.p>
 </div>
 
@@ -92,7 +93,7 @@ const Project = () => {
 
 
 
-<Link href="#" className={styles.project}>
+<Link href="#" className={` ${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]`}>
 <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 
 <div className={styles.projectImage}>
@@ -101,12 +102,12 @@ const Project = () => {
 <div className={styles.projectDesc}>
 <div className={styles.title}>
   <h4>Featured Project</h4>
-  <h2>Golazo Futbalo </h2>
+  <h2>LearnCode</h2>
 </div>
 
 <div className={styles.desc}>
   <p>
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores maxime fuga reiciendis est nemo consequuntur temporibus sunt voluptates adipisci assumenda laboriosam, delectus cum!
+  {"Curated Content for All Skill Levels: Whether you're a beginner or an advanced learner, LearnCode has carefully curated resources to suit your needs."} 
   </p>
 </div>
 
