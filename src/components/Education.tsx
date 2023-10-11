@@ -18,8 +18,8 @@ const Details=({title, header, inspiration}:DetailsProps)=>{
     <Circular reference={ref}/>
     <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"tween"}}>
         <h4 className='text-2xl font-bold capitalizee text-left text-gray-200 sm:text-xl spacing-3'>{title}</h4>
-        <span className='text-lg !text-gray-400 !opacity-1 sm:text-[14px]'>{header}</span>
-        <p className='font-medium  text-[#555]  sm:text-[15px]'>{inspiration}</p>
+        <span className='text-lg !text-gray-400 !opacity-1 sm:text-[16px]'>{header}</span>
+        <p className='font-medium  text-[#666]  sm:text-[15px]'>{inspiration}</p>
     </motion.div>
   </li>
     )

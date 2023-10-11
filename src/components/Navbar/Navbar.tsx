@@ -87,7 +87,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <header className=' w-full  py-8 font-medium  bg-dark-500 flex items-center justify-between border-b border-green-90 relative lg:py-10 lg:flex lg:justify-between md:gap-13'>
+    <header className=' flex items-center justify-between  fixed top-0 z-50 w-full border-b-2 bg-black border-black-200 '>
 
 
       <button  className="flex flex-col justify-center items-center !bg-none hidden lg:flex pl-2" onClick={handleClick}>
@@ -102,7 +102,7 @@ const Navbar = () => {
 
 {/* mobile and mediom screen  */}
 {isOpen && (
-  <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark rounded-lg backdrop-blue-md py-32 2xlg:hidden">
+  <div className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#000] rounded-lg backdrop-blue-md py-32 2xlg:hidden">
          <button onClick={handleClick}>
       <nav className='text-green-300 flex items-center flex-col justify-center gap- '>
    <MyLink href='/' title='Home' className='mb-4' />
@@ -113,22 +113,7 @@ const Navbar = () => {
       </nav>
       </button>
       
-      <nav className='flex gap-7 items-center justify-center '>
-        <Link href="/" target={"_blank"}>
-          <Image src="/4.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
-
-        </Link>
-        <Link href="/" target={"_blank"}>
-        <Image src="/5.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
-
-        </Link>
-        <Link href="/" target={"_blank"} className='flex justify-center align-center'>
-        <Image src="/6.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
-
-        </Link>
-
-
-      </nav>
+      
       </div>
 )}
       
@@ -146,24 +131,14 @@ const Navbar = () => {
 
       </nav>
 
-      <nav className='flex gap-7 items-center justify-center '>
-        <Link href="/" target={"_blank"}>
-          <Image src="/4.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
 
-        </Link>
-        <Link href="/" target={"_blank"}>
-        <Image src="/5.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
-
-        </Link>
-        <Link href="/" target={"_blank"} className='flex justify-center align-center'>
-        <Image src="/6.png" alt='' width={30} height={30} className='ring-1 ring-green-100 rounded-full p-2'/>
-
-        </Link>
+     
+      <div className="flex items-center justify-center">
+      <Logo/>
 
 
-      </nav>
-      
-      
+      </div>
+     
       </div>
 
       {/* LOGO */}
@@ -179,7 +154,7 @@ const Navbar = () => {
 {/* right items */}
      
      
-      <div className="  absolute left-[50%] top-2 translate-x-[-50%]">
+      <div className="flex items-center justify-center">
       <Logo/>
 
 

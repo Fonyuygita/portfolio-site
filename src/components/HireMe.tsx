@@ -6,8 +6,8 @@ import React from 'react'
 
 const HireMe = () => {
     return (
-        <div className='fixed left-8 bottom-4 flex items-center justify-center md:right-3 md:left-auto md:top-0 md:bottom-auto md:absolute'>
-            <div className="w-48 h-auto flex items-center justify-center relative md:w-24 ">
+        <div className='fixed bottom-4 left-4 z-10'>
+            <div className="w-48 h-auto flex items-center justify-center relative md:w-24 bg-black rounded-full">
             
                 <Image src="/circle.png" className='animate-spin-slow' alt='circular' width={340} height={340}/>
            

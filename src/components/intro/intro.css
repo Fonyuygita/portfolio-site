@@ -1,3 +1,4 @@
+
 .container{
    background-color: #111;
     display:flex;
@@ -57,12 +58,13 @@
  text-align: center;
     width: 100%;
     margin: 0 auto;
+
 }
 
 .right p{
     font-size: 1rem;
     width: 100%;
-   text-align: left;
+   text-align: center;
 }
 span.first{
 
@@ -148,6 +150,7 @@ span.first{
     box-shadow: none;
     flex: 1;
     width: fit-content;
+    box-shadow: none;
     }
 
     .img{
@@ -255,7 +258,7 @@ padding-top: 12px;
     width: 100%;
     text-align: center;
     justify-content: center;
-    box-shadow: 5px 5px 5px 5px  #444;
+   box-shadow: none;
     background-color: #2222;
 
 
@@ -288,7 +291,7 @@ border-radius: 4rem;
         font-size: 15px;
     }
 
-    .btn{
+    /* .btn{
         margin-top: 2.5rem;
         display: flex;
         gap: 1.3rem;
@@ -307,12 +310,12 @@ border-radius: 4rem;
         transition: 1s all ease-in-out;
     
     
-    }
-    .ntn1:hover{
+    } */
+    /* .ntn1:hover{
         color:#555;
         background: #222;
         padding: 7px 13px;
-    }
+    } */
 
     .socials{
         display: flex;

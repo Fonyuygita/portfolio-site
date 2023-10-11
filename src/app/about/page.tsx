@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
-import icon1 from "../../../public/4.png"
-import icon2 from "../../../public/5.png"
+
 import icon3 from "../../../public/6.png"
-import about from "../../../public/aboutMe.png"
+
 import Link from 'next/link'
 import Skills from '@/components/skills/Skills'
 import TransitionEffect from '@/components/Transition'
@@ -15,7 +14,7 @@ import Education from '@/components/Education'
 const About = () => {
   return (
 
-    <div className={styles.about}>
+    <div className={`{styles.about} !mt-[6rem]`}>
       <TransitionEffect />
       <h2>Passion Fuels <br />
         <span>Purpose</span></h2>
@@ -41,18 +40,20 @@ const About = () => {
           </div>
           <div className={styles.image}>
             <div className={styles.box}>
+              <Link href="https://github.com/Fonyuygita">
               <Image src="/image.png" alt="image" width={380} height={400} className={styles.img} />
+              </Link>
 
             </div>
             <div className={styles.desc}>
               <h3 className={styles.title}>Fonyuy Gita</h3>
               <div className={styles.socials}>
                 <Link href="#" className={styles.icon}>
-                  <Image src={icon1} width={26} height={26} alt='icon' />
+                  <Image src="/linkedin.svg" width={26} height={26} alt='icon' />
 
                 </Link>
                 <Link href="#" className={styles.icon}>
-                  <Image src="/3.png" width={26} height={26} alt='icon' />
+                  <Image src="/github.svg" width={26} height={26} alt='icon' />
 
                 </Link>
 

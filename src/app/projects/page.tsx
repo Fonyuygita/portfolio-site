@@ -12,7 +12,7 @@ import TransitionEffect from '@/components/Transition'
 const Project = () => {
   return (
     <>
-    <div className={styles.about}>
+    <div className={`${styles.about} !mt-[3rem]`}>
 <TransitionEffect/>
 
       <h1 className={styles.title}>Imagination Trumps <br/> Knowledge</h1>
@@ -24,10 +24,10 @@ const Project = () => {
       <div className={styles.container}>
         <div className={`${styles.projects}  ` }>
 
-<Link href="#" className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]`}>
+<div className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#111]`}>
   <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 <div className={styles.projectImage}>
-  <Image src="https://images.pexels.com/photos/1833336/pexels-photo-1833336.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="project" width={350} height={380} className='img' />
+  <Image src="https://images.pexels.com/photos/9811243/pexels-photo-9811243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="project" width={350} height={380} className='img' />
 </div>
 <div className={styles.projectDesc}>
 <div className={styles.title}>
@@ -43,21 +43,23 @@ const Project = () => {
 </div>
 
 <div className={styles.btn}>
-  <div className={styles.icon}>
+  <Link href="https://github.com/Fonyuygita/Buy-Now" className={styles.icon}>
   <Image src={github} alt='github' width={30} height={30} className={styles.github}/>
 
-  </div>
+  </Link>
+  <Link href="https://learn-code-phi.vercel.app/">
   <button className={styles.btn1}>Visit Project</button>
+  </Link>
 </div>
 </div>
 <div className={styles.count}>
   <span className={styles.number}>1</span>
 </div>
 </motion.div>
-</Link>
+</div>
 
 
-<Link href="#" className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]` }>
+<div className={`${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#111]` }>
 <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 
 <div className={styles.projectImage}>
@@ -76,11 +78,13 @@ const Project = () => {
 </div>
 
 <div className={styles.btn}>
-  <div className={styles.icon}>
+  <Link href="https://github.com/Fonyuygita/Explore-Car" className={styles.icon}>
   <Image src={github} alt='github' width={30} height={30} className={styles.github}/>
 
-  </div>
+  </Link>
+  <Link href="https://explore-car.vercel.app">
   <button className={styles.btn1}>Visit Project</button>
+  </Link>
 </div>
 </div>
 
@@ -89,15 +93,15 @@ const Project = () => {
 </div>
 
 </motion.div>
-</Link>
+</div>
 
 
 
-<Link href="#" className={` ${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]`}>
+<div className={` ${styles.project} rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#111]`}>
 <motion.div  initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"spring"}}>
 
 <div className={styles.projectImage}>
-  <Image src="https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="project" width={350} height={380} className='img' />
+  <Image src="https://images.pexels.com/photos/4559555/pexels-photo-4559555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="project" width={350} height={380} className='img' />
 </div>
 <div className={styles.projectDesc}>
 <div className={styles.title}>
@@ -112,11 +116,13 @@ const Project = () => {
 </div>
 
 <div className={styles.btn}>
-  <div className={styles.icon}>
+  <Link href="https://github.com/Fonyuygita/LearnCode" className={styles.icon}>
   <Image src={github} alt='github' width={30} height={30} className={styles.github}/>
 
-  </div>
+  </Link>
+  <Link href="https://learn-code-phi.vercel.app/">
   <button className={styles.btn1}>Visit Project</button>
+  </Link>
 </div>
 </div>
 
@@ -126,7 +132,7 @@ const Project = () => {
 </div>
 </motion.div>
 
-</Link>
+</div>
 
         </div>
 

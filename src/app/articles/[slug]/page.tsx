@@ -23,7 +23,7 @@ export default async function SlugPage({params}:{params:{slug:string}}){
     }
 
     return(
-        <div className={styles.container}>
+        <div className={`${styles.container} !mt-[3rem]`}>
             <p className={styles.date}>
             {new Date(data._createdAt).toISOString().split("T")[0]}
             </p>

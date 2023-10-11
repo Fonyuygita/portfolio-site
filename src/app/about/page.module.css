@@ -97,7 +97,7 @@ margin-top: 2rem;
     text-align: center;
 }
 .image{
-    box-shadow: 5px 5px 5px #555;
+    /* box-shadow: 5px 5px 5px #555; */
     
    position: relative;
         padding: 2rem;
@@ -107,6 +107,7 @@ margin-top: 2rem;
         justify-content: center;
         flex-direction: column;
         border-bottom: 2px solid yellow;
+        background-color: #111;
        
     
 }
@@ -131,10 +132,10 @@ margin-top: 2rem;
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
-    background-color: #999;
+    background-color: #000;
     align-items: center;
     justify-content: center;
-    padding: 11px;
+    padding: 14px;
     border-radius: 13px;
     gap: 30px;
     top: 40%;
@@ -144,7 +145,7 @@ margin-top: 2rem;
     transition: 0.6s all ease-out;
 }
 .socials .icon:hover{
-    background-color: teal;
+    background-color: orange;
     opacity: 0.6;
 }
 .socials .icon:nth-child(1){
@@ -153,6 +154,7 @@ margin-top: 2rem;
     padding: 7px;
     border-radius: 50%;
     border: 0.1px solid teal;
+    background-color: #fff;
 }
 .socials .icon:nth-child(2){
     width: 40px;
@@ -160,6 +162,7 @@ margin-top: 2rem;
     padding: 7px;
     border-radius: 50%;
     border: 0.1px solid coral;
+    background-color: coral;
 }
 
 .socials .icon:nth-child(3){
@@ -167,7 +170,8 @@ margin-top: 2rem;
     height: 40px;
     padding: 7px;
     border-radius: 50%;
-    border: 0.1px solid yellow
+    border: 0.1px solid yellow;
+    background-color: blueviolet;
 }
 
 
@@ -252,14 +256,15 @@ margin-top: 2rem;
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
-    background-color: #999;
+    background-color: #000;
     align-items: center;
     justify-content: center;
-    padding: 11px;
+    padding: 13px;
     border-radius: 13px;
     gap: 30px;
     top: 20%;
     width: 40px;
+    border:1px solid #555;
 }
 
 
