@@ -59,7 +59,7 @@ const ResourceCart=()=>{
 
 
 
-<div className="box bg-[#111] rounded-lg shadow-lg  hover:shadow-xl p-6 transition-all duration-100" key={item.id}>
+<div className="box bg-[#111] rounded-lg shadow-lg  hover:shadow-xl p-4 transition-all duration-100" key={item.id}>
 <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px] max-h-[300px]">
 
   <CardHeader className="flex justify-center items-center flex-col gap-2.5 !p-0">

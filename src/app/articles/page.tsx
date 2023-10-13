@@ -11,7 +11,7 @@ export default async function Home() {
   
     return (
 
-<div className="my-[8rem] flex w-full  justify-center gap-16 max-md:justify-start">
+<div className="my-[8rem] flex w-full  justify-center gap-16 max-md:justify-center">
   
     <ResourceCart/>
 
