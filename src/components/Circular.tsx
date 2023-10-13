@@ -13,7 +13,7 @@ const Circular = ({reference}:ReferenceType) => {
  
     })
     return (
-     <figure ref={reference} className=' absolute left-[-10.7%] sm:hidden stroke-dark '>
+     <figure ref={reference} className=' absolute left-[-34px]  stroke-dark '>
 <svg width="75" height="75" viewBox='0 0 100 100' className='-rotate-90'>
  <circle cx="75" cy="50" r="20" className='strock-dark stroke-1 fill-yellow-300'/>
  <motion.circle style={{pathLength:scrollYProgress}} cx="75" cy="50" r="20" className=' stroke-[5px] fill-red-500'/>

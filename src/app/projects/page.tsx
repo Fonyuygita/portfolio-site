@@ -47,7 +47,7 @@ const Project = () => {
   <Image src={github} alt='github' width={30} height={30} className={styles.github}/>
 
   </Link>
-  <Link href="https://learn-code-phi.vercel.app/">
+  <Link href="https://buy-nown.vercel.app/">
   <button className={styles.btn1}>Visit Project</button>
   </Link>
 </div>

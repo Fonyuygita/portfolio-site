@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='home !mt-[3rem]'>
+    <div className='home !mt-[8rem]'>
 <TransitionEffect/>
 
       <Intro/>

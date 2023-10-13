@@ -21,9 +21,10 @@ const Intro = () => {
     <Image src="/fonyuy.png" width={300} height={270}  alt='intro' className='img'/>
 </div>
       </div>
-      <div className="right !w-full !text-center shadow-lg  hover:shadow-xl p-6 transition-all duration-100 bg-[#000]">
+      <div className="right !w-full !text-center shadow-lg  hover:shadow-xl p-3 transition-all duration-100 bg-[#000]">
         
-        <AnimateText text={`I'm Fonyuy Jude.I Turn Vision Into Reality With Code And Design`} className='!text-6xl !text-center sm:!text-2xl'/>
+       
+        <h1 className="!text-2xl !text-center max-md:!text-lg !mb-3">{"I'm Fonyuy Jude.I Turn Vision Into Reality With Code And Design"}</h1>
 
 <p>I am a Full Stack Developer . I have worked with various technologies and frameworks, such as React(NextJs), , Node.js, Firebase, and Flutter. I am passionate about creating user-friendly, scalable, and secure solutions that meet the needs of my clients. I am always eager to learn new skills and explore new challenges.</p>
 <div className="flex flex-start mt-4 items-left">

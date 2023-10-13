@@ -59,7 +59,7 @@
 .bio p{
 margin-top: 2rem;
     color: #666;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
 .bio a.btn{
@@ -214,7 +214,7 @@ margin-top: 2rem;
 @media screen and (max-width:860px){
    
       .about{
-        margin-top: 3rem;
+        margin-top: 1rem;
       }   
     .aboveSection{
         display: flex;

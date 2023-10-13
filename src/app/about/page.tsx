@@ -14,11 +14,9 @@ import Education from '@/components/Education'
 const About = () => {
   return (
 
-    <div className={`{styles.about} !mt-[6rem]`}>
+    <div className={`{styles.about} !mt-[8rem] !overflow-x-auto`}>
       <TransitionEffect />
-      <h2>Passion Fuels <br />
-        <span>Purpose</span></h2>
-      <div className={styles.line}></div>
+    
       <div className={styles.section}>
 
         <div className={styles.aboveSection}>
@@ -26,7 +24,7 @@ const About = () => {
             <div className={styles.bio}>
               <div className={styles.title}>
                 <h3>About Me</h3>
-                <div className={styles.line}></div>
+              
               </div>
 
 
@@ -71,7 +69,8 @@ const About = () => {
         </div>
 
 
-        <div className={styles.bottom}>
+        <div className="">
+          <h3 className='text-[#777] text-xl my-2 text-center'>EDUCATION & ASPIRATIONS</h3>
           <Education/>
         </div>
 

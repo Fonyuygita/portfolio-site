@@ -14,7 +14,7 @@ const Details=({title, header, inspiration}:DetailsProps)=>{
     const ref=useRef<HTMLLIElement | null>(null);
 
     return(
-  <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[100%] ml-23 flex flex-col items-center justify-between gap-4 md:w-[80%] sm:w-[100%]'>
+  <li ref={ref} className='my-3 mt-0 first:mt-0 last:mb-0 w-[100%] ml-6 flex flex-col items-center justify-between gap-4 md:w-[80%] sm:w-[100%]'>
     <Circular reference={ref}/>
     <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.8, type:"tween"}}>
         <h4 className='text-2xl font-bold capitalizee text-left text-gray-200 sm:text-xl spacing-3'>{title}</h4>
@@ -34,12 +34,12 @@ const Education = () => {
         }
     )
     return (
-        <div className='my-12  relative sm:-mt-5'>
-            <h2 className='font-bold text-8xl mb-32 sm:!text-4xl sm:!text-center xs:!text-3xl'>{"Education & Dreams"}</h2>
-            <div className='w-[30%] h-[2px] bg-yellow-500 absolute top-[8%] left-[30%] md:hidden'></div>
+        <div className='my-6  relative sm:-mt-2'>
+            {/* <h2 className='font-bold text-8xl  sm:!text-4xl sm:!text-center xs:!text-3xl'>{"Education & Dreams"}</h2> */}
+            
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[100%] md:w-full">
 
-                <motion.div style={{scaleY:scrollYProgress}} className="absolute left-[-7.6%] top-0 w-[2px] h-full  bg-yellow-200 origin-top "/>
+                <motion.div style={{scaleY:scrollYProgress}} className="absolute left- top-0 w-[2px] h-full  bg-yellow-200 origin-top "/>
 
              <ul className='w-full flex flex-col items-start gap-3 justify-between ml-25 '>
              <Details title={`Bsc in Computer Science`} header='The future of nation building' inspiration="Pursuing a BSc in computer science is a rewarding and challenging endeavor. Computer science is a field that encompasses many disciplines, such as programming, software engineering, "/>
