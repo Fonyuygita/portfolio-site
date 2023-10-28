@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
 
-import icon3 from "../../../public/6.png"
+
 
 import Link from 'next/link'
 import Skills from '@/components/skills/Skills'
@@ -29,7 +29,7 @@ const About = () => {
 
 
               <p className='sm-!text-[15px]'>{`Hi, I'm a developer and this is my story. I started coding when I was 19 years old, after I was intrigue by how someone could navigate from one page to another while using software applications, thought this was magic, and decided to give it a go.
-                <br />I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time developer. I have so many goals and dreams that I want to achieve. I want to work on projects that have a positive impact on the world, collaborate with other passionate developers, and keep learning new technologies and frameworks.
+              I was fascinated by the power of programming and decided to pursue it as a career. I went to college and majored in computer science, I'm also looking forward to graduating next year and starting my career as a full-time developer. I have so many goals and dreams that I want to achieve. I want to work on projects that have a positive impact on the world, collaborate with other passionate developers, and keep learning new technologies and frameworks.
                 .
                 `}</p>
               {/* <a href="" className={styles.btn}>Read More</a> */}
@@ -46,18 +46,18 @@ const About = () => {
             <div className={styles.desc}>
               <h3 className={styles.title}>Fonyuy Gita</h3>
               <div className={styles.socials}>
-                <Link href="#" className={styles.icon}>
-                  <Image src="/linkedin.svg" width={26} height={26} alt='icon' />
+                <Link href="https://dev.to/fonyuygita" className={styles.icon}>
+                  <Image src="/dev.png" width={26} height={26} alt='icon' />
 
                 </Link>
-                <Link href="#" className={styles.icon}>
+                <Link href="https://github.com/Fonyuygita" className={styles.icon}>
                   <Image src="/github.svg" width={26} height={26} alt='icon' />
 
                 </Link>
 
 
-                <Link href="#" className={styles.icon}>
-                  <Image src={icon3} width={26} height={26} alt='icon' />
+                <Link href="https://twitter.com/fonyuyjude1" className={styles.icon}>
+                  <Image src="/x.png" width={26} height={26} alt='icon' />
 
                 </Link>
 

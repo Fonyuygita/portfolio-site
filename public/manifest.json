@@ -1,13 +1,13 @@
 
 {
- "name": "NextJS Installable",
- "short_name": "Installable",
+ "name": "Fonyuy Jude Fomonyuy",
+ "short_name": "FJ",
  "theme_color": "#000000",
  "background_color": "#000000",
  "display": "standalone",
  "scope": "/",
  "start_url": "/",
- "description": "Minimal configuration for a NextJS installable app",
+ "description": "Fetch->Decode->Execute->Store",
  "icons": [
    {
      "src": "/icon-512x512.png",
