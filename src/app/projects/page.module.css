@@ -230,17 +230,17 @@ justify-content: center;
     color: #111;
     background: yellowgreen;
     padding: 1rem;
-    top: 0%;
-    left: 0%;
-    height: 50px;
-    width: 50px;
+    top: -2%;
+    left: -2%;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .number{
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 
 

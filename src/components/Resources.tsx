@@ -49,6 +49,36 @@ const data:Props[]=[
       link:"https://dev.to/fonyuygita/bunjs-a-fast-and-efficient-javascript-runtime-1gnm"   
   },
 
+
+  {
+    id:5,
+    title:"ChatGpt evil twins are Here ",
+    img:"/gpt.png",
+    link:"https://dev.to/fonyuygita/chatgpts-evil-twins-are-here-4hd4"   
+},
+
+{
+  id:6,
+  title:" Introduction to Backend Security in NodeJs",
+  img:"/backend.png",
+  link:"https://dev.to/fonyuygita/introduction-to-backend-security-5dlp"   
+},
+
+{
+  id:7,
+  title:"How to get started as a newbie in Tech",
+  img:"/newbie.png",
+  link:"https://dev.to/fonyuygita/staying-consistent-and-motivated-as-a-newbie-in-coding-and-tech-285n"   
+},
+
+{
+  id:8,
+  title:"why learn web (javascript) ML(machine learning) 2024",
+  img:"/webml.png",
+  link:"https://dev.to/fonyuygita/why-learn-web-javascript-mlmachine-learning-2024-2ef1"   
+},
+
+
     
 ]
 
@@ -66,7 +96,7 @@ const ResourceCart=()=>{
     <div className="h-fit w-full">
       <Image 
         src={item.img}
-        className="h-full rounded-md object-cover"
+        className="h-[200px] rounded-md object-fit sm:w-[240px] md:h-full mx-auto"
         width={384}
         height={440}
         alt={item.title}
