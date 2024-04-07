@@ -16,7 +16,7 @@ const Footer = (props: Props) => {
             
 
             { /* contact details */}
-            <div className="flex justify-between items-center px-5 max-md:flex-col gap-3 md:justify-center md:items-center">
+            <div className="flex justify-center items-center px-5 max-md:flex-col gap-3 md:justify-between md:items-center">
                 <h3>conatct : 672 792 563 </h3>
                 <p>fonyuyjudegita@gmail,com</p>
             </div>
