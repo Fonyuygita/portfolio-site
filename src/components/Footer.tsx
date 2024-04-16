@@ -1,8 +1,16 @@
+
+import { LucideProps } from 'lucide-react';
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {
     
 }
+
+type ExtendedLucideProps = LucideProps & {
+    rel: string;
+  };
 
 const Footer = (props: Props) => {
     return (
@@ -16,10 +24,31 @@ const Footer = (props: Props) => {
             
 
             { /* contact details */}
-            <div className="flex justify-center items-center px-5 max-md:flex-col gap-3 md:justify-between md:items-center">
-                <h3>conatct : 672 792 563 </h3>
-                <p>fonyuyjudegita@gmail,com</p>
-            </div>
+         <div className="fixed  h-12 md:h-24 w-full mx-auto  bottom-0 bg-black text-white p-3 flex flex-col mt-6  justify-center items-center md:flex-row">
+
+         <div className="flex space-x-4"> 
+
+
+
+<Link href="https://wa.me/+237672792563" target="_blank " rel="noopener noreferrror" >
+<Image src="/whatsapp.png" alt="github" width={24} height={24} />
+</Link>
+
+<Link href="">
+<Image src="/linkedin.png" alt="github" width={24} height={24} />
+</Link>
+
+<Link href="https://twitter.com/fonyuyjude1">
+<Image src="/twi.png" alt="github" width={24} height={24}  className='text-white'/>
+</Link>
+
+<Link href="https://github.com/Fonyuygita">
+<Image src="/github.png" alt="github" width={24} height={24}  className='bg-white'/>
+</Link>
+
+
+</div>
+         </div>
 
             
         </div>

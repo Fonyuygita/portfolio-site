@@ -39,10 +39,10 @@ export default function RootLayout({
   
     
       {children}
-    <HireMe/>
+  
      
     <Footer/>
-    <Whatsapp/>
+
       </body>
      
     </html>
