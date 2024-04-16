@@ -42,7 +42,7 @@ const Footer = (props: Props) => {
 </Link>
 
 <Link href="https://twitter.com/fonyuyjude1">
-<FaSquareXTwitter color='#fff' size={27}/>
+<FaSquareXTwitter color='white' size={27}/>
 </Link>
 
 <Link href="https://github.com/Fonyuygita">
