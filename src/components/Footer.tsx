@@ -1,8 +1,10 @@
-
 import { LucideProps } from 'lucide-react';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {FaGithub, FaLinkedin, FaWhatsapp} from "react-icons/fa"
+import { FaSquareXTwitter } from "react-icons/fa6";
+// import {} from "react-icons/fc"
 
 interface Props {
     
@@ -31,19 +33,20 @@ const Footer = (props: Props) => {
 
 
 <Link href="https://wa.me/+237672792563" target="_blank " rel="noopener noreferrror" >
-<Image src="/whatsapp.png" alt="github" width={25} height={25} />
+<FaWhatsapp size={27} color='#fff'/>
 </Link>
 
 <Link href="">
-<Image src="/linkedin.png" alt="github" width={24} height={24} />
+{/* <Image src="/linkedin.png" alt="github" width={24} height={24} /> */}
+<FaLinkedin size={27} color='#fff'/>
 </Link>
 
 <Link href="https://twitter.com/fonyuyjude1">
-<Image src="/twi.png" alt="github" width={24} height={24}  className='text-white'/>
+<FaSquareXTwitter color='#fff' size={27}/>
 </Link>
 
 <Link href="https://github.com/Fonyuygita">
-<Image src="/github.png" alt="github" width={24} height={24}  className='bg-white'/>
+<FaGithub color='#fff' size={27} />
 </Link>
 
 
