@@ -11,7 +11,7 @@ import Image from 'next/image'
 
  
 export const metadata: Metadata = {
-  title: "Fonyyuy Gita, FullStack developer, Tech Tutor, Web developer | app developer",
+  title: "Fonyuy Gita, FullStack developer, Tech Tutor, Web developer | app developer",
   description:
     "fonyuygita.vercel.app - A passionate Full stack developer, Developer, Tutor, FrontEnd, React, Machine Learning, Data Science, and more.",
   keywords: [
@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     "fomonyuy",
     "gita",
     "full stack developer",
+    "fonyuy jude",
+    "jude fomonyuy",
+    "fomonyuy jude",
+    "fonyuy jude fomonyuy",
+    "nquami",
+    "tech tutor vercel",
+    "tech tutor",
+    "tech tutor seed",
     "fonyuy gita"
   ],
   openGraph: {
