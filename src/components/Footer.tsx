@@ -31,7 +31,7 @@ const Footer = (props: Props) => {
 
 
 <Link href="https://wa.me/+237672792563" target="_blank " rel="noopener noreferrror" >
-<Image src="/whatsapp.png" alt="github" width={24} height={24} />
+<Image src="/whatsapp.png" alt="github" width={25} height={25} />
 </Link>
 
 <Link href="">
