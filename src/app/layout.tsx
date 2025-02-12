@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: 'Fonyuy Jude Fomonyuy',
   description: 'A passionate Full stack developer',
   manifest: '/manifest.json',
-  themeColor: '#000000'
+  // themeColor: '#000000'
 }
 
 export default function RootLayout({
@@ -29,22 +29,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <Script src='/register-sw.ts' />
-   
+      <Script src='/register-sw.ts' />
+
       <body className={inter.className}>
-     
-    
-      <Navbar/>
-        
-  
-    
-      {children}
-  
-     
-    <Footer/>
+
+
+        {/* <Navbar/> */}
+
+
+
+        {children}
+
+
+        {/* <Footer/> */}
 
       </body>
-     
+
     </html>
   )
 }
