@@ -10,6 +10,8 @@ import Footer from '../components/Footer'
 import HireMe from '@/components/HireMe'
 import Whatsapp from '@/components/Whatssapp'
 import Script from 'next/script'
+import { ThemeProvider } from 'next-themes'
+import Layout from '@/components/Layout'
 
 
 
@@ -32,17 +34,14 @@ export default function RootLayout({
       <Script src='/register-sw.ts' />
 
       <body className={inter.className}>
-
-
-        {/* <Navbar/> */}
-
-
-
-        {children}
-
-
-        {/* <Footer/> */}
-
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Layout>{children}</Layout>
+        </ThemeProvider>
       </body>
 
     </html>

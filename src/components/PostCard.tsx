@@ -165,3 +165,6 @@ export const PostCard = ({ post }: { post: Post }) => {
         </motion.div>
     );
 };
+
+
+

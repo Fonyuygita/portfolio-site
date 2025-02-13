@@ -1,7 +1,8 @@
-import { Sidebar } from '@/components/Sidebar';
+// import { Sidebar } from '@/components/Sidebar';
 import { MobileHeader } from '@/components/MobileHeader';
-import { ProfileHeader } from '@/components/ProfileHeader';
+// import { ProfileHeader } from '@/components/ProfileHeader';
 import { PostCard } from '@/components/PostCard';
+import ProfileHeader from '@/components/ProfileHeader';
 import { SkillsSidebar } from '@/components/SkillsSidebar';
 // import { Post as PostType } from '@/types';
 export interface PostMetrics {
@@ -87,21 +88,14 @@ export default async function HomePage() {
   const posts = await getPosts();
 
   return (
-    <div className="min-h-screen">
-      <div className="flex min-h-screen">
-        <Sidebar />
-        <MobileHeader />
-        <div className="flex-1 border-r border-gray-200 dark:border-gray-800">
-          <div className="max-w-2xl mx-auto">
-            <ProfileHeader />
-            <div className="divide-y divide-gray-200 dark:divide-gray-800">
-              {posts.map(post => (
-                <PostCard key={post.id} post={post} />
-              ))}
-            </div>
-          </div>
+    <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="max-w-full">
+        <ProfileHeader />
+        <div className="divide-y divide-gray-200 dark:divide-gray-800">
+          {posts.map(post => (
+            <PostCard key={post.id} post={post} />
+          ))}
         </div>
-        <SkillsSidebar />
       </div>
     </div>
   );
