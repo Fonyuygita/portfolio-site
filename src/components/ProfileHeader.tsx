@@ -19,18 +19,20 @@ const ProfileHeader = () => {
                     priority
                     sizes="(max-width: 768px) 100vw, 800px"
                 />
-                <div className="h-32 sm:h-48 w-full bg-gradient-to-r from-blue-400 to-blue-600" />
+                <div className="h-32 sm:h-48 w-full bg-gradient-to-r from-blue-400 to-blue-600 " />
 
-                <Image
-                    src="https://i.ibb.co/WpNSdsZ5/D9-Zv44-VS-400x400.jpg"
-                    alt="Profile"
-                    width={128}
-                    height={128}
-                    className="rounded-full border-4 border-white dark:border-gray-900"
-                    priority
-                />
+
                 <div className="absolute -bottom-16 left-4 sm:left-6">
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white dark:border-gray-900 bg-gray-200 dark:bg-gray-800" />
+                    <Image
+                        src="https://i.ibb.co/WpNSdsZ5/D9-Zv44-VS-400x400.jpg"
+                        alt="Profile"
+                        width={128}
+                        height={128}
+                        className="rounded-full border-4 border-white dark:border-gray-900"
+                        priority
+                    />
+                    {/* <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white dark:border-gray-900 bg-gray-200 dark:bg-gray-800" /> */}
+
                 </div>
             </div>
 
