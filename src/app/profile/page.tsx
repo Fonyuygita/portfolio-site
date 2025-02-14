@@ -5,7 +5,9 @@ import React, { useState, useEffect } from 'react';
 import {
     Github, Twitter, Linkedin, Globe, Mail, MapPin,
     Calendar, Link, Box, Award, Star, Book, Coffee, Music,
-    Camera, Code, Terminal, Cpu, Heart, Brush, Gamepad
+    Camera, Code, Terminal, Cpu, Heart, Brush, Gamepad,
+    Airplay,
+    Brain
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -60,20 +62,25 @@ const Profile: React.FC = () => {
             { icon: Cpu, name: "AI/ML", level: 85, color: "#FF6B6B" },
             { icon: Brush, name: "UI/UX", level: 88, color: "#FF9F43" },
             { icon: Box, name: "Three.js", level: 75, color: "#4834D4" },
-            { icon: Terminal, name: "Python", level: 92, color: "#FFD43B" }
+            { icon: Terminal, name: "Python", level: 92, color: "#FFD43B" },
+            { icon: Terminal, name: "Machine Learning", level: 70, color: "#FF9F43" },
+            { icon: Brain, name: "Neural Networks", level: 60, color: "#FF9F43" },
+            { icon: Airplay, name: "Generative Ai and LLM's", level: 60, color: "#3178C6" },
+
+
         ],
         timeline: [
             {
                 year: "2024",
-                title: "Senior Developer at TechCorp",
-                description: "Leading AI integration projects and mentoring junior developers.",
-                tags: ["AI", "Leadership", "Development"]
+                title: "Senior Developer and CTO at {IWS}",
+                description: "Leading  projects and mentoring junior developers.",
+                tags: ["AI", "Leadership", "Development", "Web", "appDevelopment"]
             },
             {
-                year: "2022",
-                title: "Founded DevStudio",
-                description: "Started a creative technology studio focused on interactive experiences.",
-                tags: ["Startup", "Creative Tech"]
+                year: "2024",
+                title: "Founder {iws}",
+                description: "Co-founded seed alongside Cheko Yohane and Fien Dora .",
+                tags: ["Startup", "innovatewithseed"]
             }
         ],
         projects: [
