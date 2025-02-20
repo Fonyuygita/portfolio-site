@@ -4,6 +4,7 @@ import { Bot, User } from 'lucide-react';
 // import { Message } from '@/types/chat';
 import MessageContent from './MessageContent';
 import { Message } from '@/app/types';
+import Image from 'next/image';
 
 const ChatMessage: React.FC<{ message: Message }> = ({ message }) => {
     const [displayContent, setDisplayContent] = useState('');
@@ -31,7 +32,9 @@ const ChatMessage: React.FC<{ message: Message }> = ({ message }) => {
         ${message.isBot ? 'bg-primary' : 'bg-secondary'}`}
             >
                 {message.isBot ?
-                    <Bot className="w-5 h-5 text-white" /> :
+                    // <Bot className="w-5 h-5 text-white" />
+                    <Image src="/fonyuygita.png" alt="me" width={20} height={20} className='w-10 h-fit object-fit rounded-full border border-blue-400' />
+                    :
                     <User className="w-5 h-5 text-white" />
                 }
             </div>

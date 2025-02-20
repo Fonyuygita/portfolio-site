@@ -10,6 +10,7 @@ import SideNav from './Sidebar';
 import BottomNav from './BottomNav';
 import ThemeToggle from './ThemeTogggler';
 import MobileDrawer from './MobileDrawer';
+import Image from 'next/image';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     >
                         <Menu className="w-6 h-6" />
                     </button>
-                    <h1 className="text-xl font-bold">GiXolio</h1>
+                    <Image src="/icon.png" width={20} height={20} className='w-10  h-10 rounded-full border border-blue-500' alt='icon' />
                     <ThemeToggle />
                 </div>
             </header>
@@ -59,7 +60,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                      bg-white dark:bg-gray-900">
                 <div className="p-4 h-full flex flex-col">
                     <div className="flex items-center justify-between mb-8">
-                        <h1 className="font-bold text-xl hidden lg:block">GiXolio</h1>
+                        {/* <h1 className="font-bold text-xl hidden lg:block">GiXolio</h1> */}
+                        <Image src="/icon.png" width={20} height={20} className='w-10  h-10 rounded-full' alt='icon' />
+
                         <ThemeToggle />
                     </div>
                     <nav className="space-y-2">

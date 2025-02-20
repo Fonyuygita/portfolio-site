@@ -20,14 +20,16 @@ export const chatDataStore: DataStoreItem[] = [
     triggers: ["tech stack", "programming", "coding", "development"],
     response: {
       content:
-        "I specialize in modern web development with a focus on React ecosystem. Here's my tech stack visualization:",
+        "I specialize in modern web development with a focus on React ecosystem, app development and generative Ai, . Here's my tech stack visualization:",
       type: "gallery",
       mediaContent: {
         images: [
-          "/gallery/a1.png",
-          "/gallery/a2.png",
-          "/gallery/a3.png",
-          "/gallery/a4.png",
+          "/gallery/g0.png",
+          "/gallery/g1.png",
+          "/gallery/g2.png",
+          "/gallery/g3.png",
+          "/gallery/g4.png",
+          "/gallery/g5.png",
         ],
         description:
           "Frontend: React, Next.js, TypeScript\nBackend: Node.js, Python\nDevOps: Docker, AWS\nDatabases: PostgreSQL, MongoDB",
@@ -77,10 +79,10 @@ export const chatDataStore: DataStoreItem[] = [
       type: "gallery",
       mediaContent: {
         images: [
-          "/images/urban-photography.jpg",
-          "/images/nature-photography.jpg",
-          "/images/portrait-photography.jpg",
-          "/images/abstract-photography.jpg",
+          "/gallery/a1.png",
+          "/gallery/a2.png",
+          "/gallery/a3.png",
+          "/gallery/a4.png",
         ],
         description:
           "A mix of urban, nature, portrait, and abstract photography",
@@ -137,15 +139,16 @@ export const chatDataStore: DataStoreItem[] = [
     id: "travel",
     triggers: ["travel", "places", "destinations"],
     response: {
-      content:
-        "I love exploring new places! Here are some highlights from my travels:",
+      content: "have been to amazing events anf took some picturesS:",
       type: "gallery",
       mediaContent: {
         images: [
-          "/images/travel-asia.jpg",
-          "/images/travel-europe.jpg",
-          "/images/travel-americas.jpg",
-          "/images/travel-africa.jpg",
+          "/gallery/w1.png",
+          "/gallery/w2.png",
+          "/gallery/w3.png",
+          "/gallery/w4.png",
+          "/gallery/w5.png",
+          "/gallery/w6.png",
         ],
         description: "Adventures across 4 continents and counting!",
       },
