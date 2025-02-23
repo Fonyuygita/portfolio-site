@@ -68,9 +68,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <nav className="space-y-2">
                         {[
                             { icon: <Home className="w-6 h-6" />, label: 'Home', path: '/' },
-                            { icon: <Search className="w-6 h-6" />, label: 'Search', path: '/search' },
+                            { icon: <Search className="w-6 h-6" />, label: 'Search', path: '/soon' },
                             { icon: <Bot className="w-6 h-6" />, label: 'GxI', path: '/gxi' },
-                            { icon: <MessageSquare className="w-6 h-6" />, label: 'Messages', path: '/messages' },
+                            { icon: <MessageSquare className="w-6 h-6" />, label: 'Messages', path: '/soon' },
                             { icon: <User className="w-6 h-6" />, label: 'Profile', path: '/profile' },
                         ].map((item) => (
                             <a

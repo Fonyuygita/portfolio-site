@@ -117,8 +117,7 @@ export const chatDataStore: DataStoreItem[] = [
     id: "experience",
     triggers: ["experience", "work", "career"],
     response: {
-      content:
-        "I've worked with various technologies and companies throughout my career:",
+      content: "Currently working with seed",
       type: "link",
       mediaContent: {
         url: "https://linkedin.com/in/yourprofile",
@@ -136,10 +135,10 @@ export const chatDataStore: DataStoreItem[] = [
 
   // Personal Category
   {
-    id: "travel",
+    id: "events",
     triggers: ["travel", "places", "destinations"],
     response: {
-      content: "have been to amazing events anf took some picturesS:",
+      content: "have been to amazing events and took some pictures:",
       type: "gallery",
       mediaContent: {
         images: [

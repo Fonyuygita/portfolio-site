@@ -10,6 +10,7 @@ import {
     Brain
 } from 'lucide-react';
 import Image from 'next/image';
+import { FaXTwitter } from 'react-icons/fa6';
 
 interface ProfileData {
     name: string;
@@ -52,7 +53,7 @@ const Profile: React.FC = () => {
         bio: "Passionate about building innovative solutions that bridge technology and creativity. Specialized in AI/ML, web development, and interactive experiences.",
         stats: [
             { icon: Code, label: "Projects", value: "50+" },
-            { icon: Star, label: "GitHub Stars", value: "1.2k" },
+            { icon: Star, label: "GitHub Stars", value: "100+" },
             { icon: Award, label: "Awards", value: "12" },
             { icon: Coffee, label: "Coffee/day", value: "∞" }
         ],
@@ -78,25 +79,25 @@ const Profile: React.FC = () => {
             },
             {
                 year: "2024",
-                title: "Founder {iws}",
+                title: "Co-Founder {iws}",
                 description: "Co-founded seed alongside Cheko Yohane and Fien Dora .",
                 tags: ["Startup", "innovatewithseed"]
             }
         ],
         projects: [
             {
-                title: "AI Art Generator",
-                description: "Creative AI platform for generating artistic visuals",
-                image: "/projects/ai-art.jpg",
-                tags: ["AI", "React", "Python"],
-                link: "https://github.com"
+                title: "Gitash",
+                description: "Gitash Project-Master the command line through an interactive and fun learning experience.",
+                image: "https://i.ibb.co/TDb4xD9L/image.png",
+                tags: ["AI", "React", "shadcn-ui", "Nextjs14",],
+                link: "https://gitash.vercel.app/"
             },
             {
-                title: "3D Portfolio",
-                description: "Interactive 3D portfolio website built with Three.js",
-                image: "/projects/3d-portfolio.jpg",
-                tags: ["Three.js", "React", "WebGL"],
-                link: "https://github.com"
+                title: "LearnCode",
+                description: "📚 LearnCode: Curated Content for All Skill Levels - Whether you're a beginner or an advanced learner, LearnCode has carefully curated resources to suit your needs",
+                image: "https://images.pexels.com/photos/4559555/pexels-photo-4559555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                tags: ["Nextjs14", "React", "WebGL", "Sanity"],
+                link: "https://learn-code-phi.vercel.app/"
             }
         ]
     };
@@ -161,10 +162,10 @@ const Profile: React.FC = () => {
 
                     <div className="flex gap-4">
                         {[
-                            { icon: Github, href: '#', label: 'GitHub' },
-                            { icon: Twitter, href: '#', label: 'Twitter' },
-                            { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                            { icon: Globe, href: '#', label: 'Website' },
+                            { icon: Github, href: 'https://github.com/Fonyuygita', label: 'GitHub' },
+                            { icon: FaXTwitter, href: 'https://x.com/fonyuyjude1', label: 'Twitter' },
+                            { icon: Linkedin, href: 'https://www.linkedin.com/in/fonyuy-gita', label: 'LinkedIn' },
+                            { icon: Globe, href: '#', label: 'https://fonyuygita.vercel.app' },
                             { icon: Mail, href: '#', label: 'Email' }
                         ].map((social, idx) => (
                             <a

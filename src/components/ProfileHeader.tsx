@@ -48,7 +48,7 @@ const ProfileHeader = () => {
                     </button>
                 </div>
                 <p className="mt-4 text-sm sm:text-base">
-                    Building innovative solutions with modern tech stack. Passionate about web development and AI.
+                    Love Ai and working on some cool stuffs, to be released soon😊.  stay tune
                 </p>
                 <div className="flex gap-4 mt-4 pb-4 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                     <span>projects: 6+</span>

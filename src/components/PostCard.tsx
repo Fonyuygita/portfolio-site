@@ -92,7 +92,7 @@ export const PostCard = ({ post }: { post: Post }) => {
                         <div className="relative mt-3 rounded-xl overflow-hidden">
                             {post.media.type === 'image' && (
                                 <Image
-                                    src={post.media.previewUrl || "https://i.ibb.co/LdqS2p3r/image-76.jpg"}
+                                    src={post.media.previewUrl || post.media.url}
                                     alt={post.media.title || 'Post image'}
                                     width={500}
                                     height={300}
