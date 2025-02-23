@@ -18,7 +18,7 @@ import Layout from '@/components/Layout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Fonyuy Jude Fomonyuy',
+  title: 'Fonyuy Gita',
   description: 'A passionate Full stack developer',
   manifest: '/manifest.json',
   // themeColor: '#000000'
