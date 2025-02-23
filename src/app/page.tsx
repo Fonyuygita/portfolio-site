@@ -48,7 +48,7 @@ async function getPosts() {
         previewUrl: 'https://i.ibb.co/JW30pVNq/image.png',
         title: 'Buy_Now'
       },
-      externalLink: 'https://innovatewithseed.com/'
+      externalLink: 'https://www.innovatewithseed.com/'
     },
 
     {
