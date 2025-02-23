@@ -9,6 +9,7 @@ import { Send, ChevronRight, ChevronLeft, X } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 import ChatMessage from './ChatMessage';
 import { SuggestionsPanel } from './SuggestionsPanel';
+import Image from 'next/image';
 // import { ChatMessage } from './ChatMessage';
 // import { SuggestionsPanel } from './SuggestionsPanel';
 // import { Message } from '@/types/chat';
@@ -93,7 +94,7 @@ export const GixolioChat: React.FC = () => {
                     <div className="flex items-center justify-between p-4 border-b dark:border-gray-800">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                                <img src="/logo.png" alt="Gixolio" className="w-6 h-6" />
+                                <Image src="/icon.png" alt="Gixolio" className="w-6 h-6" width={20} height={20} />
                             </div>
                             <div>
                                 <h1 className="font-bold text-lg">Gixolio Assistant</h1>
