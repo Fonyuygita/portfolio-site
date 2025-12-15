@@ -1,27 +1,11 @@
-// import Sidebar from '@/components/intro/Sidebar'
-import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-
-import Navbar from '@/components/Navbar/Navbar'
-
-import Footer from '../components/Footer'
-import HireMe from '@/components/HireMe'
-import Whatsapp from '@/components/Whatssapp'
-import Script from 'next/script'
-import { ThemeProvider } from 'next-themes'
-import Layout from '@/components/Layout'
-
-
-
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider'
+import { ModeToggle } from '@/components/mode-toggle'
 
 export const metadata: Metadata = {
-  title: 'Fonyuy Gita',
-  description: 'A passionate Full stack developer',
-  manifest: '/manifest.json',
-  // themeColor: '#000000'
+  title: 'Fonyuy Gita | AI Enthusiast & Founder',
+  description: 'Portfolio of Fonyuy Gita - AI Advocate, Co-founder of SEED & ZIGEX.',
 }
 
 export default function RootLayout({
@@ -30,20 +14,23 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <Script src='/register-sw.ts' />
-
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Layout>{children}</Layout>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`font-sans min-h-screen bg-background text-foreground antialiased md:max-w-2xl lg:max-w-3xl mx-auto px-6 py-8 md:py-16 selection:bg-primary/20`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <header className="flex justify-between items-center mb-12 sm:mb-20">
+             <div className="font-bold text-lg tracking-tight hover:opacity-80 transition-opacity cursor-default">
+               Gita.
+             </div>
+             <ModeToggle />
+          </header>
+          <main>
+            {children}
+          </main>
+          <footer className="mt-20 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+             &copy; {new Date().getFullYear()} Fonyuy Gita. Built with Next.js & Tailwind.
+          </footer>
         </ThemeProvider>
       </body>
-
     </html>
   )
 }
