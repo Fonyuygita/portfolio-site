@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@portabletext/react": "^3.0.4",
     "@radix-ui/react-select": "^2.1.6",
