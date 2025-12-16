@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ModeToggle } from '@/components/mode-toggle'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
   title: 'Fonyuy Gita | AI Enthusiast & Founder',
@@ -29,6 +30,7 @@ export default function RootLayout({
           <footer className="mt-20 pt-8 border-t border-border text-center text-sm text-muted-foreground">
              &copy; {new Date().getFullYear()} Fonyuy Gita. Built with Next.js & Tailwind.
           </footer>
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>
