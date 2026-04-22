@@ -84,7 +84,7 @@ export default function Home() {
                 <h3 className="font-semibold text-lg group-hover:text-primary transition-colors flex items-center gap-2">
                   Medical AI Assistant <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </h3>
-                <span className="text-xs bg-primary/10 text-primary border border-primary/20 px-2 py-1 rounded-full font-medium">✨ Pinned</span>
+                <span className="text-xs bg-primary/10 text-primary border border-primary/20 px-2 py-1 rounded-full font-medium">Pinned</span>
               </div>
               <p className="text-muted-foreground mb-4">
                 A production-ready healthcare application powered by AI. Designed to assist medical professionals with diagnosis accuracy and patient management efficiency.
