@@ -26,7 +26,7 @@ export default function Home() {
               <Mail className="h-6 w-6" />
               <span className="sr-only">Email</span>
             </Link>
-            <Link href="https://github.com/fonyuygita" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
+            <Link href="https://github.com/iws3" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </Link>
