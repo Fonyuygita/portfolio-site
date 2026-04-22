@@ -5,7 +5,7 @@ import { ModeToggle } from '@/components/mode-toggle'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
-  title: 'Fonyuy Gita | AI Enthusiast & Founder',
+  title: 'Fonyuy Gita | DeepLearning & Founder',
   description: 'Portfolio of Fonyuy Gita - AI Advocate, Co-founder of SEED & ZIGEX.',
 }
 
