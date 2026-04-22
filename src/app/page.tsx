@@ -8,24 +8,8 @@ export default function Home() {
   return (
     <div className="space-y-20 animate-in fade-in duration-700 pb-10">
       
-      {/* Mission Statement */}
-      <section className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-r from-blue-500/10 via-purple-500/5 to-background p-8 mb-8 shadow-sm">
-        <div className="absolute top-0 right-0 p-4 opacity-5">
-          <Quote className="h-40 w-40 rotate-12" />
-        </div>
-        <div className="relative z-10 max-w-2xl">
-          <div className="flex items-center gap-2 mb-4 text-blue-600 dark:text-blue-400">
-             <Quote className="h-5 w-5" />
-             <span className="text-sm font-semibold uppercase tracking-wider">My Mission</span>
-          </div>
-          <p className="text-xl md:text-2xl font-medium leading-relaxed text-foreground">
-            To cultivate the <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">&quot;I want to build my own&quot;</span> mentality in young minds.
-          </p>
-          <p className="mt-4 text-lg text-muted-foreground">
-             Seeing that spark grow drives me to live and make those dreams a reality.
-          </p>
-        </div>
-      </section>
+      
+    
 
       {/* Hero Section */}
       <section className="flex flex-col-reverse md:flex-row gap-8 items-start md:items-center">
@@ -34,7 +18,7 @@ export default function Home() {
             Hi, I&apos;m Fonyuy Gita.
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            AI Enthusiast, Engineer, and Founder. I build AI-powered solutions and empower the next generation of African tech leaders. 
+            DeepLearning | Linear Algebra | Calculus| Statistics & Probablity , and Founder. I build AI-powered solutions and empower the next generation of African tech leaders. 
             Co-founder of <span className="font-semibold text-foreground">SEED</span> and <span className="font-semibold text-foreground">ZIGEX</span>.
           </p>
           <div className="flex gap-5 pt-2">
