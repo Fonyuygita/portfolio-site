@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="w-28 h-28 md:w-40 md:h-40 relative rounded-full overflow-hidden border-2 border-muted shrink-0 shadow-xl">
           <Image
-            src="/fonyuygita.png"
+            src="https://i.ibb.co/7xZRkRVH/Chat-GPT-Image-Mar-27-2026-07-50-13-AM.jpg"
             alt="Fonyuy Gita"
             fill
             className="object-cover"
