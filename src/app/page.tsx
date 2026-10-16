@@ -1,185 +1,290 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import DevToBlog from '@/components/DevToBlog'
 import Awards from '@/components/Awards'
-
-const CV_URL =
-  'https://drive.google.com/file/d/1oI33mhHvQzT3HxVoLNhgDfGMlVlywE81/view?usp=sharing'
-
-const link = 'text-blue-700 hover:underline'
-
-const projects = [
-  {
-    name: 'Medical AI Assistant',
-    href: 'https://github.com/iws3/Medical-AI-Assistant---Production-Ready-Healthcare-Application',
-    desc: 'Production-ready healthcare application that assists medical professionals with diagnosis accuracy and patient management.',
-  },
-  {
-    name: 'SEED AI Bootcamp',
-    href: 'https://innovatewithseed.com',
-    desc: 'Intensive bootcamp training the next generation of AI engineers in Cameroon.',
-  },
-  {
-    name: 'ZIGEX',
-    href: 'https://zigexconnect.com',
-    desc: 'AI-driven startup building solutions for local challenges.',
-  },
-]
-
-const talks = [
-  'SEED Weekend of Code: training students in hands-on coding sessions.',
-  'AI Bootcamp: training the next generation of AI engineers.',
-  'DevFest Bamenda: talk on "Attention Is All You Need".',
-  'Google I/O 2024: the future of AI in the browser.',
-  'Podcast: the impact of LLMs on the lives of engineers.',
-  'University talk: students, their future and the AI revolution.',
-]
-
-const books = [
-  { title: 'Atomic Habits', author: 'James Clear', href: 'https://jamesclear.com/atomic-habits' },
-  { title: 'Zero to One', author: 'Peter Thiel', href: 'https://en.wikipedia.org/wiki/Zero_to_One' },
-  { title: 'Mastery', author: 'George Leonard', href: 'https://www.goodreads.com/book/show/7205.Mastery' },
-  {
-    title: 'How Successful People Think',
-    author: 'John C. Maxwell',
-    href: 'https://www.goodreads.com/book/show/497745.How_Successful_People_Think',
-  },
-]
-
-const channels = [
-  { name: 'Science Time', href: 'https://www.youtube.com/@ScienceTime' },
-  { name: 'Lex Fridman', href: 'https://www.youtube.com/@lexfridman' },
-  { name: 'Veritasium', href: 'https://www.youtube.com/@veritasium' },
-  { name: 'Kurzgesagt', href: 'https://www.youtube.com/@kurzgesagt' },
-  { name: '3Blue1Brown', href: 'https://www.youtube.com/@3blue1brown' },
-  { name: 'PBS Space Time', href: 'https://www.youtube.com/@pbsspacetime' },
-]
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section className="mt-10">
-      <h2 className="text-xl font-bold mb-3">{title}</h2>
-      {children}
-    </section>
-  )
-}
+import { Mail, Github, Twitter, Linkedin, ExternalLink, Youtube, BookOpen, Quote, Download } from 'lucide-react'
 
 export default function Home() {
   return (
-    <div className="bg-white text-neutral-900 font-serif text-[17px] leading-relaxed">
-      <div className="max-w-2xl mx-auto px-5 py-12">
-        {/* Header */}
-        <header className="flex items-start justify-between gap-6">
-          <div>
-            <h1 className="text-3xl font-bold">Fonyuy Gita</h1>
-            <p className="mt-3">
-              Deep Learning, Linear Algebra, Calculus, Statistics &amp; Probability. Founder.
-              I build AI-powered solutions and help train the next generation of African tech leaders.
-            </p>
-            <p className="mt-3">
-              <a href="mailto:fonyuygita@gmail.com" className={link}>Email</a>
-              {' / '}
-              <a href={CV_URL} target="_blank" rel="noopener noreferrer" className={link}>CV (PDF)</a>
-              {' / '}
-              <a href="https://github.com/iws3" target="_blank" rel="noopener noreferrer" className={link}>GitHub</a>
-              {' / '}
-              <a href="https://twitter.com/fonyuygita" target="_blank" rel="noopener noreferrer" className={link}>Twitter</a>
-              {' / '}
-              <a href="https://linkedin.com/in/fonyuygita" target="_blank" rel="noopener noreferrer" className={link}>LinkedIn</a>
-            </p>
+    <div className="space-y-20 animate-in fade-in duration-700 pb-10">
+      
+      
+    
+
+      {/* Hero Section */}
+      <section className="flex flex-col-reverse md:flex-row gap-8 items-start md:items-center">
+        <div className="flex-1 space-y-5">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
+            Hi, I&apos;m Fonyuy Gita.
+          </h1>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            DeepLearning | Linear Algebra | Calculus| Statistics & Probablity , and Founder. I build AI-powered solutions and empower the next generation of African tech leaders. 
+            Co-founder of <span className="font-semibold text-foreground">SEED</span> and <span className="font-semibold text-foreground">ZIGEX</span>.
+          </p>
+          <div className="flex gap-5 pt-2">
+            <Link href="mailto:fonyuygita@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
+              <Mail className="h-6 w-6" />
+              <span className="sr-only">Email</span>
+            </Link>
+            <Link href="https://github.com/iws3" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
+              <Github className="h-6 w-6" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link href="https://twitter.com/fonyuygita" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
+              <Twitter className="h-6 w-6" />
+              <span className="sr-only">Twitter</span>
+            </Link>
+             <Link href="https://linkedin.com/in/fonyuygita" target="_blank" className="text-muted-foreground hover:text-foreground transition-colors transform hover:scale-110 duration-200">
+              <Linkedin className="h-6 w-6" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
           </div>
-          <div className="relative w-28 h-28 shrink-0 overflow-hidden rounded-sm">
-            <Image
-              src="https://i.ibb.co/7xZRkRVH/Chat-GPT-Image-Mar-27-2026-07-50-13-AM.jpg"
-              alt="Fonyuy Gita"
-              fill
-              className="object-cover"
-              priority
-            />
+          <div className="pt-1">
+            <a
+              href="https://drive.google.com/file/d/1oI33mhHvQzT3HxVoLNhgDfGMlVlywE81/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-border px-4 py-2 rounded-lg text-sm font-medium hover:bg-muted/40 hover:border-foreground/30 transition-colors"
+            >
+              <Download className="h-4 w-4" />
+              Download CV
+            </a>
           </div>
-        </header>
-
-        {/* About */}
-        <Section title="About">
-          <p>
-            I am passionate about Artificial Intelligence and its potential to transform Africa.
-            My work is not only building code, but building communities.
-          </p>
-          <p className="mt-3">
-            I co-founded <a href="https://innovatewithseed.com" target="_blank" rel="noopener noreferrer" className={link}>SEED</a>{' '}
-            with <a href="https://github.com/yohanes" target="_blank" rel="noopener noreferrer" className={link}>Cheko Yohane</a> (CEO)
-            and <a href="https://github.com/Fien-Dora" target="_blank" rel="noopener noreferrer" className={link}>Fien Dora</a> (COO).
-            As CTO, I run the SEED AI Bootcamp, where I have trained over 30 students.
-          </p>
-          <p className="mt-3">
-            Some of those students are now building{' '}
-            <a href="https://zigexconnect.com" target="_blank" rel="noopener noreferrer" className={link}>ZIGEX</a>,
-            a startup we are growing together. I also host SEED AI Friday and speak at tech events
-            to advocate for AI adoption.
-          </p>
-        </Section>
-
-        {/* Awards */}
-        <div className="mt-10">
-          <Awards />
         </div>
-
-        {/* Projects */}
-        <Section title="Projects">
-          <ul className="space-y-3">
-            {projects.map((p) => (
-              <li key={p.name}>
-                <a href={p.href} target="_blank" rel="noopener noreferrer" className={`${link} font-semibold`}>
-                  {p.name}
-                </a>
-                <br />
-                <span className="text-neutral-700">{p.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </Section>
-
-        {/* Talks */}
-        <Section title="Talks &amp; Community">
-          <ul className="list-disc pl-5 space-y-1">
-            {talks.map((t) => (
-              <li key={t}>{t}</li>
-            ))}
-          </ul>
-        </Section>
-
-        {/* Blog */}
-        <div className="mt-10">
-          <DevToBlog />
+        <div className="w-28 h-28 md:w-40 md:h-40 relative rounded-full overflow-hidden border-2 border-muted shrink-0 shadow-xl">
+          <Image
+            src="https://i.ibb.co/7xZRkRVH/Chat-GPT-Image-Mar-27-2026-07-50-13-AM.jpg"
+            alt="Fonyuy Gita"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
+      </section>
 
-        {/* Reading */}
-        <Section title="Recommended Reading">
-          <ul className="list-disc pl-5 space-y-1">
-            {books.map((b) => (
-              <li key={b.title}>
-                <a href={b.href} target="_blank" rel="noopener noreferrer" className={link}>{b.title}</a>
-                , {b.author}
-              </li>
-            ))}
-          </ul>
-        </Section>
-
-        {/* Channels */}
-        <Section title="Favorite YouTube Channels">
+      {/* About Section */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold tracking-tight border-b border-border pb-2">About</h2>
+        <div className="prose dark:prose-invert text-muted-foreground leading-relaxed max-w-none text-lg">
           <p>
-            {channels.map((c, i) => (
-              <span key={c.name}>
-                <a href={c.href} target="_blank" rel="noopener noreferrer" className={link}>{c.name}</a>
-                {i < channels.length - 1 && ', '}
-              </span>
-            ))}
+            I am deeply passionate about Artificial Intelligence and its potential to transform Africa. 
+            My journey involves not just building code, but building communities.
           </p>
-        </Section>
+          <p>
+            I co-founded <Link href="https://innovatewithseed.com" target="_blank" className="font-semibold">SEED</Link> alongside <Link href="https://github.com/yohanes" target="_blank">Cheko Yohane</Link> (CEO) and <Link href="https://github.com/Fien-Dora" target="_blank">Fien Dora</Link> (COO). 
+            Serving as the <span className="font-semibold text-foreground">CTO</span>, I host the <span className="font-semibold text-foreground">SEED AI BOOTCAMP</span>, where I&apos;ve trained over 30 students.
+          </p>
+          <p>
+            Some of my students are now building <Link href="https://zigexconnect.com" target="_blank" className="font-semibold">ZIGEX</Link>, 
+            a startup we are growing together. I also host <strong>SEED AI FRIDAY</strong> and speak at various tech events to advocate for AI adoption.
+          </p>
+        </div>
+      </section>
 
-        <footer className="mt-14 pt-4 border-t border-neutral-200 text-sm text-neutral-500">
-          Fonyuy Gita
-        </footer>
-      </div>
+      {/* Awards Section */}
+      <Awards />
+
+      {/* Projects Section */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold tracking-tight border-b border-border pb-2">Selected Projects</h2>
+        <div className="grid grid-cols-1 gap-6">
+          
+          <Link href="https://github.com/iws3/Medical-AI-Assistant---Production-Ready-Healthcare-Application" target="_blank" className="group block">
+            <div className="border border-border p-5 rounded-xl hover:bg-muted/40 transition-all hover:border-primary/50 shadow-sm hover:shadow-md">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-semibold text-lg group-hover:text-primary transition-colors flex items-center gap-2">
+                  Medical AI Assistant <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </h3>
+                <span className="text-xs bg-primary/10 text-primary border border-primary/20 px-2 py-1 rounded-full font-medium">Pinned</span>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                A production-ready healthcare application powered by AI. Designed to assist medical professionals with diagnosis accuracy and patient management efficiency.
+              </p>
+              <div className="flex gap-3 text-xs text-muted-foreground font-mono">
+                 <span>Python</span>
+                 <span>•</span>
+                 <span>AI/ML</span>
+                 <span>•</span>
+                 <span>Healthcare</span>
+              </div>
+            </div>
+          </Link>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+             <Link href="https://innovatewithseed.com" target="_blank" className="group border border-border p-5 rounded-xl hover:bg-muted/40 transition-all hover:border-foreground/20">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="font-semibold group-hover:underline">SEED AI BOOTCAMP</h3>
+                <span className="text-xs border border-border px-2 py-0.5 rounded-full text-muted-foreground">Education</span>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Intensive bootcamp training the next generation of AI engineers in Cameroon.
+              </p>
+             </Link>
+
+             <Link href="https://zigexconnect.com" target="_blank" className="group border border-border p-5 rounded-xl hover:bg-muted/40 transition-all hover:border-foreground/20">
+               <div className="flex justify-between items-start mb-2">
+                <h3 className="font-semibold group-hover:underline">ZIGEX</h3>
+                <span className="text-xs border border-border px-2 py-0.5 rounded-full text-muted-foreground">Startup</span>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                AI-driven startup building solutions for local challenges.
+              </p>
+             </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Books Section */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold tracking-tight border-b border-border pb-2 flex items-center gap-2">
+          <BookOpen className="h-5 w-5" /> Recommended Reading
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+           {[
+             { title: "Atomic Habits", author: "James Clear", link: "https://jamesclear.com/atomic-habits" },
+             { title: "Zero to One", author: "Peter Thiel", link: "https://en.wikipedia.org/wiki/Zero_to_One" },
+             { title: "Mastery", author: "George Leonard", link: "https://www.goodreads.com/book/show/7205.Mastery" },
+             { title: "How Successful People Think", author: "John C. Maxwell", link: "https://www.goodreads.com/book/show/497745.How_Successful_People_Think" }
+           ].map((book) => (
+             <Link key={book.title} href={book.link} target="_blank" className="bg-card border border-border p-4 rounded-lg flex flex-col justify-center text-center hover:border-foreground/30 transition-colors h-32 group">
+                <h3 className="font-semibold text-sm mb-1 group-hover:underline">{book.title}</h3>
+                <p className="text-xs text-muted-foreground">{book.author}</p>
+             </Link>
+           ))}
+        </div>
+      </section>
+
+      {/* YouTube Section */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold tracking-tight border-b border-border pb-2 flex items-center gap-2">
+          <Youtube className="h-5 w-5" /> Favorite Channels
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <Link href="https://www.youtube.com/@ScienceTime" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+            <div className="bg-red-600 p-2 rounded-full text-white">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">Science Time</h3>
+              <p className="text-sm text-muted-foreground">Science & Futurism</p>
+            </div>
+          </Link>
+          <Link href="https://www.youtube.com/@lexfridman" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+             <div className="bg-foreground p-2 rounded-full text-background">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">Lex Fridman</h3>
+              <p className="text-sm text-muted-foreground">Deep Conversations</p>
+            </div>
+          </Link>
+          <Link href="https://www.youtube.com/@veritasium" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+            <div className="bg-red-600 p-2 rounded-full text-white">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">Veritasium</h3>
+              <p className="text-sm text-muted-foreground">Science & Engineering</p>
+            </div>
+          </Link>
+          <Link href="https://www.youtube.com/@kurzgesagt" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+            <div className="bg-red-600 p-2 rounded-full text-white">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">Kurzgesagt</h3>
+              <p className="text-sm text-muted-foreground">In a Nutshell</p>
+            </div>
+          </Link>
+          <Link href="https://www.youtube.com/@3blue1brown" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+            <div className="bg-red-600 p-2 rounded-full text-white">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">3Blue1Brown</h3>
+              <p className="text-sm text-muted-foreground">Math & Visuals</p>
+            </div>
+          </Link>
+          <Link href="https://www.youtube.com/@pbsspacetime" target="_blank" className="flex items-center gap-4 border border-border p-4 rounded-lg hover:bg-muted/40 transition-colors group">
+            <div className="bg-red-600 p-2 rounded-full text-white">
+              <Youtube className="h-5 w-5" />
+            </div>
+            <div>
+              <h3 className="font-semibold group-hover:underline">PBS Space Time</h3>
+              <p className="text-sm text-muted-foreground">Astrophysics</p>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* Gallery / Talks Section */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold tracking-tight border-b border-border pb-2">Talks & Community</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/woc.png" alt="SEED Weekend of Code" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               <strong>SEED Weekend of Code</strong>: Training students in hands-on coding sessions.
+             </p>
+          </div>
+
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/bc.png" alt="AI Bootcamp Session" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               <strong>AI Bootcamp</strong>: Training the next generation of AI engineers.
+             </p>
+          </div>
+
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/devfest.png" alt="DevFest Bamenda Talk" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               Speaking at <strong>DevFest Bamenda</strong> on the powerful paper &quot;Attention is All You Need&quot;.
+             </p>
+          </div>
+
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/google_io.png" alt="Google IO 2024 Talk" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               <strong>Google I/O 2024</strong>: Discussing the future of AI in the browser.
+             </p>
+          </div>
+
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/podcast.png" alt="Podcast Session" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               Discussing the potential impact of LLMs in the lives of engineers.
+             </p>
+          </div>
+
+          <div className="space-y-2 group">
+             <div className="relative aspect-video rounded-xl overflow-hidden border border-border bg-muted">
+               <Image src="/ai_talks.png" alt="University Talk" fill className="object-cover transition-transform group-hover:scale-105" />
+             </div>
+             <p className="text-sm text-muted-foreground italic">
+               Talking to university students about their future and the AI revolution.
+             </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section>
+        <DevToBlog />
+      </section>
+
     </div>
   )
 }
